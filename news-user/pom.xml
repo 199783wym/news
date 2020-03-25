@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>news</groupId>
+    <groupId>news-worker</groupId>
     <artifactId>news-user</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>news-user</name>

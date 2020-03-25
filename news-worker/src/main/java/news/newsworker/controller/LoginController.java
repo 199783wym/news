@@ -1,12 +1,16 @@
 package news.newsworker.controller;
 
+import news.newsworker.service.LoginService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -17,25 +21,23 @@ import java.security.NoSuchAlgorithmException;
  */
 @Controller
 public class LoginController {
+
+    @Autowired
+    private LoginService loginService;
+
     @PostMapping("/login")
     public String login(
             @RequestParam(value = "username",required =false)String username,
             @RequestParam(value = "password",required =false)String password,
             HttpServletRequest request,
+            HttpServletResponse response,
             Model model
     ) throws NoSuchAlgorithmException {
-        System.out.println(username+password);
-//        MessageDigest md = MessageDigest.getInstance("MD5");
-//        // java自带工具包MessageDigest
-////        String resultString = MD5Utils.md5("123456");
-//        System.out.println(resultString);
-//        // e10adc3949ba59abbe56e057f20f883e
-//        String resultString1 = MD5Utils.md5("1234");
-//        System.out.println(resultString1);
-//        //81dc9bdb52d04dc20036dbd8313ed055
-//
-//        // spring自带工具包DigestUtils
-        System.out.println(DigestUtils.md5DigestAsHex("1234".getBytes()));
+
+        boolean flag = loginService.isAdmin(username, DigestUtils.md5DigestAsHex(password.getBytes()));
+        if(flag){
+            response.addCookie(new Cookie("username",username));
+        }
        return "index";
     }
 

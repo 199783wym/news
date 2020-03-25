@@ -1359,9 +1359,9 @@ data_date</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="322" parent="250" name="class">
+    <column id="322" parent="250" name="admin_class">
       <Position>4</Position>
-      <DataType>mediumtext|0s</DataType>
+      <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="323" parent="250" name="GMT_CREATE">
