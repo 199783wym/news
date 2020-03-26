@@ -28,7 +28,7 @@ public class SessionInterceptor implements HandlerInterceptor {
         Cookie[] cookies = request.getCookies();
         if (cookies != null && cookies.length != 0) {
             for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("user")) {
+                if (cookie.getName().equals("username")) {
                     String username = cookie.getValue();
                     AdminExample userExample = new AdminExample();
                     userExample.createCriteria()
