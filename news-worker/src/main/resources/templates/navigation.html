@@ -13,7 +13,7 @@
                     <div id="gtco-logo"><a href="index.html">首页 <em>.</em></a></div>
                 </div>
                 <div class="col-xs-8 text-right menu-1">
-                    <ul>
+                    <ul th:if="${session.user!=null}">
                         <li><a href="features.html">Features</a></li>
                         <li><a href="tour.html">Tour</a></li>
                         <li class="has-dropdown">
@@ -27,8 +27,14 @@
                         </li>
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li th:if="${session.user!=null}">
-                            <span th:text="${session.user.getUsername()}"></span>
+                        <li><a href="#">欢迎</a></li>
+                        <li class="has-dropdown" >
+                            <a href="#" th:text="${session.user.getUsername()}"></a>
+                            <ul class="dropdown">
+                                <li><a href="/logout">退出登录</a></li>
+
+                            </ul>
+
                         </li>
 
                         <li class="btn-cta"><a href="#"><span>Get started</span></a></li>
