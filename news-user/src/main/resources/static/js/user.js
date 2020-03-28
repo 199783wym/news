@@ -5,5 +5,21 @@ function post(){
     if (password!=password2){
         alert("两次输入的密码不同")
     }
-    console.log(username + password + password2);
+    $.ajax({
+        type:"POST",
+        url:"/register",
+        contentType :'application/json',
+        data:JSON.stringify({
+            "username":username,
+            "password":password
+        }),
+        success : function(response){
+            if(response.code==200){
+                window.location.reload();
+            }else{
+                alert("注册失败");
+            }
+        },
+        dataType :"json"
+    })
 }

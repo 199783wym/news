@@ -1,5 +1,6 @@
 package news.newsuser.controller;
 
+import news.newsuser.dto.UserDTO;
 import news.newsuser.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.Cookie;
@@ -51,5 +53,11 @@ public class LoginController {
         cookie.setMaxAge(0);
         response.addCookie(cookie);
         return "redirect:/";
+    }
+
+    @PostMapping("/register")
+    public Object register(@RequestBody UserDTO userDTO,
+                           HttpServletRequest request){
+        return null;
     }
 }
