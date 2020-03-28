@@ -6,7 +6,7 @@
         <groupId>news</groupId>
         <artifactId>news</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <groupId>news-worker</groupId>
     <artifactId>news-user</artifactId>
