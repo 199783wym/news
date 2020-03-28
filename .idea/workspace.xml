@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d3b5612-fa0a-4761-bc10-87648117da3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-user/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-user/src/main/resources/templates/navigation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/css/icomoon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/css/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/css/themify-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/bootstrap/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/bootstrap/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/bootstrap/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/icomoon/icomoon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/icomoon/icomoon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/icomoon/icomoon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/icomoon/icomoon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/themify-icons/themify.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/themify-icons/themify.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/themify-icons/themify.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/fonts/themify-icons/themify.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/img_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/img_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/img_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/img_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/img_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/img_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/img_bg_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/img_bg_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/img_bg_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/macbook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/person_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/person_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/images/person_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/jquery.countTo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/jquery.easing.1.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/jquery.stellar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/jquery.waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/magnific-popup-options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/modernizr-2.6.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/respond.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/GameView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/ImageUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/MainActivity.java" afterDir="false" />
@@ -335,19 +283,8 @@
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/out/production/Thread_test_2/com/cdut/ym/xmlreader/reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/out/production/Thread_test_2/com/cdut/ym/xmlreader/reader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/src/com/cdut/ym/xmlreader/reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/src/com/cdut/ym/xmlreader/reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7c69a7b-e51e-42f3-a53d-2694d4cc9d75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f7c69a7b-e51e-42f3-a53d-2694d4cc9d75.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/NewsUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/NewsUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-user/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/resources/templates/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-worker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/NewsWorkerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/NewsWorkerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-worker/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.iml" beforeDir="false" afterPath="$PROJECT_DIR$/news.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -419,7 +356,7 @@
           <entry key="html" value="10" />
           <entry key="java" value="27" />
           <entry key="jpg" value="14" />
-          <entry key="js" value="1" />
+          <entry key="js" value="2" />
           <entry key="md" value="2" />
           <entry key="png" value="2" />
           <entry key="properties" value="7" />
@@ -433,7 +370,7 @@
           <entry key="HTML" value="10" />
           <entry key="Image" value="16" />
           <entry key="JAVA" value="27" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="7" />
@@ -444,8 +381,9 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="5" />
-          <entry key="html" value="407" />
+          <entry key="html" value="468" />
           <entry key="java" value="947" />
+          <entry key="js" value="144" />
           <entry key="properties" value="32" />
           <entry key="sql" value="110" />
           <entry key="xml" value="125" />
@@ -454,8 +392,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="HTML" value="407" />
+          <entry key="HTML" value="468" />
           <entry key="JAVA" value="947" />
+          <entry key="JavaScript" value="144" />
           <entry key="Properties" value="32" />
           <entry key="SQL" value="110" />
           <entry key="XML" value="125" />
@@ -507,11 +446,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/templates/hello.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="81" column="63" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+            <state relative-caret-position="333">
+              <caret line="98" column="120" selection-start-line="98" selection-start-column="120" selection-end-line="98" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -593,6 +541,7 @@
         <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java" />
         <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/news-user/src/main/resources/templates/hello.html" />
+        <option value="$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js" />
       </list>
     </option>
   </component>
@@ -632,10 +581,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="951" />
+    <option name="y" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -741,6 +691,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="news" type="b2602c69:ProjectViewProjectNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="news-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="news" type="b2602c69:ProjectViewProjectNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="news-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="news" type="b2602c69:ProjectViewProjectNode" />
@@ -903,18 +872,17 @@
       <workItem from="1585155723429" duration="1832000" />
       <workItem from="1585158295798" duration="11938000" />
       <workItem from="1585277653663" duration="13021000" />
-      <workItem from="1585407370089" duration="232000" />
+      <workItem from="1585407370089" duration="2831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54690000" />
+    <option name="totallyTimeSpent" value="57260000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="761" y="-7" width="782" height="838" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14812332" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3756906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -931,7 +899,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5851206" weight="0.2462006" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5851206" weight="0.25379938" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.41487935" side_tool="true" weight="0.3237082" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.31914893" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -939,7 +907,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.27859238" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.4574468" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -999,7 +967,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1296,8 +1263,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/templates/hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="81" column="63" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+        <state relative-caret-position="333">
+          <caret line="98" column="120" selection-start-line="98" selection-start-column="120" selection-end-line="98" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
