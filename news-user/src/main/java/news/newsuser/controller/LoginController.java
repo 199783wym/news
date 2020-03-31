@@ -1,6 +1,7 @@
 package news.newsuser.controller;
 
 import news.newsuser.dto.UserDTO;
+import news.newsuser.model.User;
 import news.newsuser.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -58,6 +59,10 @@ public class LoginController {
     @PostMapping("/register")
     public Object register(@RequestBody UserDTO userDTO,
                            HttpServletRequest request){
-        return null;
+        User user =new User();
+        user.setName(userDTO.getName());
+        user.setPassword(userDTO.getPassword());
+        loginService.register(user);
+        return "redirect:/";
     }
 }

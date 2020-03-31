@@ -283,6 +283,8 @@
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/out/production/Thread_test_2/com/cdut/ym/xmlreader/reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/out/production/Thread_test_2/com/cdut/ym/xmlreader/reader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/src/com/cdut/ym/xmlreader/reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/src/com/cdut/ym/xmlreader/reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -352,7 +354,7 @@
           <entry key="css" value="2" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="10" />
-          <entry key="java" value="29" />
+          <entry key="java" value="34" />
           <entry key="jpg" value="14" />
           <entry key="js" value="2" />
           <entry key="md" value="2" />
@@ -367,7 +369,7 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="10" />
           <entry key="Image" value="16" />
-          <entry key="JAVA" value="29" />
+          <entry key="JAVA" value="34" />
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -381,7 +383,7 @@
           <entry key="css" value="5" />
           <entry key="dummy" value="1" />
           <entry key="html" value="468" />
-          <entry key="java" value="1094" />
+          <entry key="java" value="1172" />
           <entry key="js" value="342" />
           <entry key="properties" value="32" />
           <entry key="sql" value="110" />
@@ -392,7 +394,7 @@
         <counts>
           <entry key="CSS" value="5" />
           <entry key="HTML" value="468" />
-          <entry key="JAVA" value="1094" />
+          <entry key="JAVA" value="1172" />
           <entry key="JavaScript" value="342" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="32" />
@@ -405,10 +407,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="306">
+              <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -417,22 +419,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/NewsUserApplication.java">
+        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/ResultDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="361">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/exception/CustomizeException.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/exception/CustomizeErrorCode.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/exception/ICustomizeErrorCode.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
-              <caret line="58" column="55" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -469,36 +486,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="139">
               <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-user/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/NewsWorkerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -547,11 +534,13 @@
         <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/NewsUserApplication.java" />
         <option value="$PROJECT_DIR$/news-user/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java" />
         <option value="$PROJECT_DIR$/news-user/src/main/resources/templates/hello.html" />
         <option value="$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js" />
         <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/userDTO.java" />
+        <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/exception/ICustomizeErrorCode.java" />
+        <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/ResultDTO.java" />
         <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java" />
       </list>
     </option>
   </component>
@@ -591,8 +580,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="951" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="978" />
     <option name="height" value="1048" />
@@ -664,6 +653,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="newsuser" type="462c0819:PsiDirectoryNode" />
               <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="news" type="b2602c69:ProjectViewProjectNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="news-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="newsuser" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="news" type="b2602c69:ProjectViewProjectNode" />
@@ -799,15 +798,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="news.newsuser.dto" />
       <recent name="news.newsuser.service" />
       <recent name="news.newsworker.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codebase\java\news\news-user\src\main\java\news\newsuser" />
       <recent name="D:\codebase\java\news\news-user\src\main\resources" />
       <recent name="D:\codebase\java\news\news-user\src\main\resources\templates" />
       <recent name="D:\codebase\java\news\news-worker\src\main\resources\templates" />
       <recent name="D:\codebase\java\news" />
-      <recent name="D:\codebase\java\news\news-worker\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -872,17 +872,18 @@
       <workItem from="1585155723429" duration="1832000" />
       <workItem from="1585158295798" duration="11938000" />
       <workItem from="1585277653663" duration="13021000" />
-      <workItem from="1585407370089" duration="6254000" />
+      <workItem from="1585407370089" duration="9239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60683000" />
+    <option name="totallyTimeSpent" value="63668000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="761" y="-7" width="782" height="838" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27071825" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16085792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -899,7 +900,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.5851206" visible="true" weight="0.25987843" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.5851206" visible="true" weight="0.25073314" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.41487935" side_tool="true" weight="0.3237082" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.31914893" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -967,26 +968,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="5" selection-start-line="14" selection-start-column="3" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7c69a7b-e51e-42f3-a53d-2694d4cc9d75/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1213,13 +1194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news-user/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1265,13 +1239,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/exception/CustomizeException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/exception/CustomizeErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/exception/ICustomizeErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/ResultDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="58" column="55" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="55" />
+        <state relative-caret-position="361">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>

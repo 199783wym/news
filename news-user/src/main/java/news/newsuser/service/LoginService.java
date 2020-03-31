@@ -37,4 +37,8 @@ public class LoginService {
 
 
     }
+
+    public void register(User user) {
+        userMapper.insert(user);
+    }
 }
