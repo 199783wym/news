@@ -28,7 +28,7 @@ public class LoginService {
             return false;
         }else{
             User admin = admins.get(0);
-            if (password.equals(admin.getPassword()) ) {
+            if (password.equals(admin.getPasswordMd5()) ) {
                 return true;
             }
             return false;

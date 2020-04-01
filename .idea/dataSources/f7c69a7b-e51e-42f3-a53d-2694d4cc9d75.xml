@@ -1437,9 +1437,9 @@ data_date</ColNames>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="338" parent="251" name="password">
+    <column id="338" parent="251" name="password_md5">
       <Position>12</Position>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="339" parent="251" name="PRIMARY">

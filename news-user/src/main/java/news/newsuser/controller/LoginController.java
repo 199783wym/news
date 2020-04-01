@@ -1,5 +1,6 @@
 package news.newsuser.controller;
 
+import news.newsuser.dto.ResultDTO;
 import news.newsuser.dto.UserDTO;
 import news.newsuser.model.User;
 import news.newsuser.service.LoginService;
@@ -29,6 +30,11 @@ public class LoginController {
 
     @Autowired
     private LoginService loginService;
+
+    @GetMapping("/")
+    public String index(){
+        return "hello";
+    }
     @PostMapping("/login")
     public String login(
             @RequestParam(value = "username",required =false)String username,
@@ -60,9 +66,9 @@ public class LoginController {
     public Object register(@RequestBody UserDTO userDTO,
                            HttpServletRequest request){
         User user =new User();
-        user.setName(userDTO.getName());
-        user.setPassword(userDTO.getPassword());
+        user.setName(userDTO.getUsername());
+        user.setPasswordMd5(DigestUtils.md5DigestAsHex(userDTO.getPassword().getBytes()));
         loginService.register(user);
-        return "redirect:/";
+        return ResultDTO.okOf();
     }
 }
