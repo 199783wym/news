@@ -282,19 +282,8 @@
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/out/production/Thread_test_2/com/cdut/ym/xmlreader/reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/out/production/Thread_test_2/com/cdut/ym/xmlreader/reader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/src/com/cdut/ym/xmlreader/reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/src/com/cdut/ym/xmlreader/reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7c69a7b-e51e-42f3-a53d-2694d4cc9d75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f7c69a7b-e51e-42f3-a53d-2694d4cc9d75.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/model/UserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/model/UserExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-user/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/AdminExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/AdminExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -354,13 +343,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="admin" value="1" />
+          <entry key="admin" value="2" />
           <entry key="css" value="2" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="11" />
+          <entry key="html" value="12" />
           <entry key="java" value="43" />
           <entry key="jpg" value="14" />
-          <entry key="js" value="4" />
+          <entry key="js" value="5" />
           <entry key="md" value="3" />
           <entry key="png" value="2" />
           <entry key="properties" value="8" />
@@ -372,11 +361,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="Database Element" value="3" />
-          <entry key="HTML" value="11" />
+          <entry key="Database Element" value="4" />
+          <entry key="HTML" value="12" />
           <entry key="Image" value="16" />
           <entry key="JAVA" value="43" />
-          <entry key="JavaScript" value="4" />
+          <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="8" />
@@ -390,7 +379,7 @@
           <entry key="dummy" value="1" />
           <entry key="html" value="468" />
           <entry key="java" value="1257" />
-          <entry key="js" value="360" />
+          <entry key="js" value="362" />
           <entry key="properties" value="32" />
           <entry key="sql" value="112" />
           <entry key="xml" value="125" />
@@ -401,7 +390,7 @@
           <entry key="CSS" value="5" />
           <entry key="HTML" value="468" />
           <entry key="JAVA" value="1257" />
-          <entry key="JavaScript" value="360" />
+          <entry key="JavaScript" value="362" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="32" />
           <entry key="SQL" value="112" />
@@ -415,11 +404,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="134">
+              <caret line="71" column="32" lean-forward="true" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1004#1005#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -428,17 +418,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="97">
               <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="137" selection-start-line="137" selection-end-line="137" />
             </state>
           </provider>
         </entry>
@@ -446,26 +427,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://f7c69a7b-e51e-42f3-a53d-2694d4cc9d75/schema/news/table/user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/UserDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="228">
+              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -473,11 +436,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/ResultDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="143">
+              <caret line="45" column="24" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/templates/hello.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="104" column="114" lean-forward="true" selection-start-line="104" selection-start-column="114" selection-end-line="104" selection-end-column="114" />
             </state>
           </provider>
         </entry>
@@ -533,8 +505,8 @@
         <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/ResultDTO.java" />
         <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/service/LoginService.java" />
         <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/UserDTO.java" />
-        <option value="$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js" />
         <option value="$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js" />
       </list>
     </option>
   </component>
@@ -574,7 +546,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="978" />
@@ -785,7 +757,7 @@
     <property name="SearchEverywhereHistoryKey" value="style.css&#9;FILE&#9;file://D:/codebase/java/news/news-worker/src/main/resources/static/css/style.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585718442236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585837022224" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -867,18 +839,18 @@
       <workItem from="1585155723429" duration="1832000" />
       <workItem from="1585158295798" duration="11938000" />
       <workItem from="1585277653663" duration="13021000" />
-      <workItem from="1585407370089" duration="13127000" />
+      <workItem from="1585407370089" duration="16421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67556000" />
+    <option name="totallyTimeSpent" value="70850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22386059" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20710456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -896,7 +868,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5851206" weight="0.25073314" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5851206" weight="0.25987843" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.41487935" side_tool="true" weight="0.3237082" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3181818" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -904,7 +876,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.36363637" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.5293255" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -970,19 +942,12 @@
           <url>file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java</url>
           <line>71</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/mapper/AdminMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1264,10 +1229,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/templates/hello.html">
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/UserDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="98" column="120" selection-start-line="98" selection-start-column="120" selection-end-line="98" selection-end-column="120" />
+        <state relative-caret-position="266">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1278,27 +1243,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://f7c69a7b-e51e-42f3-a53d-2694d4cc9d75/schema/news/table/user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/ResultDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,27 +1257,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/dto/ResultDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/templates/hello.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="104" column="114" lean-forward="true" selection-start-line="104" selection-start-column="114" selection-end-line="104" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/static/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/static/js/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        <state relative-caret-position="228">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="97">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="134">
+          <caret line="71" column="32" lean-forward="true" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
           </folding>
         </state>
       </provider>

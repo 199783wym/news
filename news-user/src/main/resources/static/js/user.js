@@ -13,7 +13,7 @@ function post(){
             "username":username,
             "password":password
         }),
-        success : function(response){
+        success: function(response){
             console.log(response);
             if(response.code==200){
                 window.location.reload();
