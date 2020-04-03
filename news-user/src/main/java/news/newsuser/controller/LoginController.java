@@ -58,6 +58,7 @@ public class LoginController {
         response.addCookie(cookie);
         return "redirect:/";
     }
+
     @ResponseBody
     @PostMapping("/register")
     public Object register(@RequestBody UserDTO userDTO,
