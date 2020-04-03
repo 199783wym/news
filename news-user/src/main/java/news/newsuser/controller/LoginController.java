@@ -32,6 +32,7 @@ public class LoginController {
     public String index(){
         return "hello";
     }
+
     @PostMapping("/login")
     public String login(
             @RequestParam(value = "username",required =false)String username,

@@ -29,7 +29,7 @@
                         <!--<li><a href="contact.html">Contact</a></li>-->
                         <li><a href="#">欢迎</a></li>
                         <li class="has-dropdown" >
-                            <a href="#" th:text="${session.user.getUsername()}"></a>
+                            <a href="#" th:text="${session.user.getName()}"></a>
                             <ul class="dropdown">
                                 <li><a href="">个人中心</a></li>
                                 <li><a href="/logout">退出登录</a></li>
