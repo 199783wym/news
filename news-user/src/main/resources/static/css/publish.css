@@ -1,0 +1,13 @@
+#content_publish{
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.row >*{
+    color: #fcf8e3;
+}
+.form-control{
+    color:#fcf8e3;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+
+}
