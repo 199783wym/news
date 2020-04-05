@@ -13,9 +13,9 @@
                     <div id="gtco-logo"><a href="/">首页 <em>.</em></a></div>
                 </div>
                 <div class="col-xs-8 text-right menu-1">
-                    <ul th:if="${session.user!=null}">
-                        <li><a href="publish.html">发布线索</a></li>
-                        <li><a href="features.html">我的线索</a></li>
+                    <ul th:if="${session.user!=null}" >
+                        <li ><a href="/publish" style="color: #000;">发布线索</a></li>
+                        <li ><a href="features.html" style="color: #000;">我的线索</a></li>
                         <!--<li><a href="tour.html">待审线索</a></li>-->
                         <!--<li class="has-dropdown">-->
                             <!--<a href="#">Dropdown</a>-->
@@ -28,9 +28,9 @@
                         <!--</li>-->
                         <!--<li><a href="pricing.html"></a></li>-->
                         <!--<li><a href="contact.html">Contact</a></li>-->
-                        <li><a href="#">欢迎</a></li>
-                        <li class="has-dropdown" >
-                            <a href="#" th:text="${session.user.getName()}"></a>
+                        <li ><a href="#" style="color: #000;">欢迎</a></li>
+                        <li class="has-dropdown">
+                            <a href="#" style="color: #000;" th:text="${session.user.getName()}"></a>
                             <ul class="dropdown">
                                 <li><a href="">个人中心</a></li>
                                 <li><a href="/logout">退出登录</a></li>

@@ -62,23 +62,23 @@
     <div class="page-inner">
 
 
-        <header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(images/wall03.png)">
+        <header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(images/wall04.png)">
             <!--<div class="container-fluid main">-->
-            <div th:insert="~{navigation :: nav}"></div>
+            <div  th:insert="~{navigation :: nav}"></div>
                 <div class="row" id="content_publish">
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <h2><span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true">发起</span></h2>
-                        <hr>
+                        <h1 ><span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true" style="color: #000;">提交线索</span></h1>
+                        <hr style="color: #000;">
 
                         <form action="/publish" method="post">
                             <input type="hidden"  name="id">
                             <div class="form-group">
-                                <label for="title">问题标题（简单扼要）</label>
+                                <label for="title">线索概括</label>
                                 <input type="text" class="form-control"  id="title" name="title"
-                                       placeholder="问题标题...">
+                                       placeholder="概括...">
                             </div>
                             <div class="form-group">
-                                <label for="description">问题补充（必填，请参考右侧提示）</label>
+                                <label for="description">线索内容（必填，请参考右侧提示）</label>
                                 <textarea name="description" id="description"  class="form-control"
                                           cols="30" rows="10"> </textarea>
                             </div>
@@ -107,7 +107,7 @@
                         </form>
                     </div>
                     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                        <h3 style="color:rgba(255, 255, 255, 0.7)">问题发起指南</h3>
+                        <h3 style="color: #000;">问题发起指南</h3>
                         • 问题标题: 请用精简的语言描述您发布的问题，不超过25字<br>
                         • 问题补充: 详细补充您的问题内容，并确保问题描述清晰直观, 并提供一些相关的资料<br>
                         • 选择标签: 选择一个或者多个合适的标签，用逗号隔开，每个标签不超过10个字<br>
