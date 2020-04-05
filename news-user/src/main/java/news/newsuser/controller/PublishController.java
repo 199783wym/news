@@ -14,6 +14,5 @@ public class PublishController {
     @GetMapping(value="/publish")
     public String toPublish(){
         return "publish";
-
     }
 }
