@@ -86,12 +86,9 @@
                                 <label for="type">添加标签</label>
                                 <!--<input tyep="text" class="form-control"  id="tag" name="tag"-->
                                        <!--placeholder="输入标签 用,分割">-->
-                                <select id ="type" class="form-control" calss="col-lg-9 col-md-12 col-sm-12 col-xs-12">>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                <select id ="type" class="form-control" calss="col-lg-9 col-md-12 col-sm-12 col-xs-12" >
+                                    <option  th:each="type:${ClueTypes}" th:text="${type.name}"></option>
+
                                 </select>
 
                             </div>

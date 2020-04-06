@@ -47,7 +47,7 @@ public class LoginController {
         if(flag){
             response.addCookie(new Cookie("username",username));
         }
-        return "publish";
+        return "redirect:/publish";
     }
 
     @GetMapping("/logout")
