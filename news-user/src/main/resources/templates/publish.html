@@ -71,7 +71,7 @@
                         <hr style="color: #000;">
 
                         <form action="/publish" method="post">
-                            <input type="hidden"  name="id">
+                            <input type="hidden" th:value="${session.user.getId()}" name="id">
                             <div class="form-group">
                                 <label for="title">线索概括</label>
                                 <input type="text" class="form-control"  id="title" name="title"
@@ -86,7 +86,7 @@
                                 <label for="type">添加标签</label>
                                 <!--<input tyep="text" class="form-control"  id="tag" name="tag"-->
                                        <!--placeholder="输入标签 用,分割">-->
-                                <select id ="type" class="form-control" calss="col-lg-9 col-md-12 col-sm-12 col-xs-12" >
+                                <select id ="type" name ="type" class="form-control col-lg-9 col-md-12 col-sm-12 col-xs-12" >
                                     <option  th:each="type:${ClueTypes}" th:text="${type.name}"></option>
 
                                 </select>
@@ -97,6 +97,10 @@
                                     <!--<div calss="col-lg-9 col-md-12 col-sm-12 col-xs-12">-->
                                         <!--<div class="alert alert-danger col-lg-9 col-md-12 col-sm-12 col-xs-12"></div>-->
                                     <!--</div>-->
+                                    <div calss="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="alert alert-danger col-lg-9 col-md-12 col-sm-12 col-xs-12" th:text="${error}"
+                                             th:if="${error}!=null"></div>
+                                    </div>
 
                                     <div calss="col-lg-3 col-md-12 col-sm -12 col-xs-12">
                                         <button type="submit" class="btn btn-success btn-publish ">
