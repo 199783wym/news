@@ -78,8 +78,13 @@ public class PublishController {
         Dictionary typeClass = publishService.search(type);
 
         Clue clue=new Clue();
-        clue.setId(id);
-        clue.set
+        clue.setCreateId(id);
+        clue.setTitle(title);
+        clue.setContent(description);
+        clue.setType(typeClass.getId());
+        clue.setGmtCreate(System.currentTimeMillis());
+        clue.setGmtModified(System.currentTimeMillis());
+        publishService.insert(clue);
         return "redirect:/";
     }
 }

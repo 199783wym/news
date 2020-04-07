@@ -1,6 +1,8 @@
 package news.newsuser.service;
 
+import news.newsuser.mapper.ClueMapper;
 import news.newsuser.mapper.DictionaryMapper;
+import news.newsuser.model.Clue;
 import news.newsuser.model.Dictionary;
 import news.newsuser.model.DictionaryExample;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,8 @@ import java.util.List;
 public class PublishService {
     @Autowired
     private DictionaryMapper dictionaryMapper;
+    @Autowired
+    private ClueMapper clueMapper;
 
     public List<Dictionary> search(Long type){
         DictionaryExample dictionaryExample=new DictionaryExample();
@@ -33,5 +37,9 @@ public class PublishService {
         }else{
             return dictionaries.get(0);
         }
+    }
+
+    public void insert(Clue clue) {
+        clueMapper.insert(clue);
     }
 }
