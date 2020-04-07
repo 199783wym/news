@@ -1,5 +1,7 @@
 package news.newsuser.controller;
 
+import news.newsuser.service.ClueService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.Mapping;
@@ -12,8 +14,12 @@ import org.springframework.web.bind.annotation.PostMapping;
  */
 @Controller
 public class UserController {
-    @GetMapping(value="muyclue")
-    public String myClue(){
+    @Autowired
+    private ClueService clueService;
 
+    @GetMapping(value="myclue")
+    public String myClue(){
+        clueService.selectAll();
+        return "myclue";
     }
 }
