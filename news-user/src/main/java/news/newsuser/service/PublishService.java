@@ -23,4 +23,15 @@ public class PublishService {
         dictionaryExample.createCriteria().andTypeEqualTo(type);
         return dictionaryMapper.selectByExample(dictionaryExample);
     }
+
+    public Dictionary search(String type) {
+        DictionaryExample dictionaryExample=new DictionaryExample();
+        dictionaryExample.createCriteria().andNameEqualTo(type);
+        List<Dictionary> dictionaries = dictionaryMapper.selectByExample(dictionaryExample);
+        if (dictionaries == null) {
+            return null;
+        }else{
+            return dictionaries.get(0);
+        }
+    }
 }

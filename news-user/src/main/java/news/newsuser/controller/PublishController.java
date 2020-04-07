@@ -74,9 +74,12 @@ public class PublishController {
 //        question.setCreator(user.getId());
 //        question.setId(id);
 //        questionService.createOrUpdate(question);
-        //根据type值
-        Clue clue=new Clue();
+        //根据type值 查出id
+        Dictionary typeClass = publishService.search(type);
 
+        Clue clue=new Clue();
+        clue.setId(id);
+        clue.set
         return "redirect:/";
     }
 }
