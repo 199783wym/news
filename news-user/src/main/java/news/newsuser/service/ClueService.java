@@ -21,12 +21,8 @@ public class ClueService {
     private ClueMapper clueMapper;
 
 
-    public PageInfo<Clue> selectAll() {
-
-        Integer pageNum=1;
-        Integer pageSize=10;
-
-        PageHelper.startPage(pageNum,pageSize);//这行是重点，表示从pageNum页开始，每页pageSize条数据
+    public PageInfo<Clue> selectAll(Integer page, Integer size) {
+        PageHelper.startPage(page,size);//这行是重点，表示从pageNum页开始，每页pageSize条数据
         ClueExample clueExample = new ClueExample();
         List<Clue> list = clueMapper.selectByExample(clueExample);
         PageInfo<Clue> pageInfo = new PageInfo<Clue>(list);
