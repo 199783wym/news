@@ -11,3 +11,13 @@
     color:#000;
 
 }
+#clue-content{
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.media{
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
