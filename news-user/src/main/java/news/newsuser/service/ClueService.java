@@ -5,6 +5,7 @@ import com.github.pagehelper.PageInfo;
 import news.newsuser.mapper.ClueMapper;
 import news.newsuser.model.Clue;
 import news.newsuser.model.ClueExample;
+import news.newsuser.util.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +25,7 @@ public class ClueService {
     public PageInfo<Clue> selectAll(Integer page, Integer size) {
         PageHelper.startPage(page,size);//这行是重点，表示从pageNum页开始，每页pageSize条数据
         ClueExample clueExample = new ClueExample();
-        clueExample.createCriteria().andCreateIdEqualTo()
+        clueExample.createCriteria().andCreateIdEqualTo(UserContext.getLoginInfo().getId());
         List<Clue> list = clueMapper.selectByExample(clueExample);
         PageInfo<Clue> pageInfo = new PageInfo<Clue>(list);
         return pageInfo;
