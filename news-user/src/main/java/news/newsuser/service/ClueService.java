@@ -24,6 +24,7 @@ public class ClueService {
     public PageInfo<Clue> selectAll(Integer page, Integer size) {
         PageHelper.startPage(page,size);//这行是重点，表示从pageNum页开始，每页pageSize条数据
         ClueExample clueExample = new ClueExample();
+        clueExample.createCriteria().andCreateIdEqualTo()
         List<Clue> list = clueMapper.selectByExample(clueExample);
         PageInfo<Clue> pageInfo = new PageInfo<Clue>(list);
         return pageInfo;
