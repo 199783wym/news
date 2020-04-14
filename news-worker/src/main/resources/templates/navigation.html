@@ -14,8 +14,8 @@
                 </div>
                 <div class="col-xs-8 text-right menu-1">
                     <ul th:if="${session.user!=null}">
-                        <li><a href="features.html">线索目录</a></li>
-                        <li><a href="tour.html">待审线索</a></li>
+                        <li><a href="/clue">线索目录</a></li>
+                        <li><a href="/toAudit">待审线索</a></li>
                         <!--<li class="has-dropdown">-->
                             <!--<a href="#">Dropdown</a>-->
                             <!--<ul class="dropdown">-->
@@ -25,8 +25,7 @@
                                 <!--<li><a href="#">API</a></li>-->
                             <!--</ul>-->
                         <!--</li>-->
-                        <li><a href="pricing.html">新闻稿</a></li>
-                        <!--<li><a href="contact.html">Contact</a></li>-->
+                        <li><a href="/news">新闻稿</a></li>
                         <li><a href="#">欢迎</a></li>
                         <li class="has-dropdown" >
                             <a href="#" th:text="${session.user.getUsername()}"></a>

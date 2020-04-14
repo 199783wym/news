@@ -23,7 +23,6 @@ public class UserContext {
         return session;
     }
     public static Admin getLoginInfo() {
-
         return (Admin) getSession().getAttribute(USER_IN_SESSION);
     }
 }
