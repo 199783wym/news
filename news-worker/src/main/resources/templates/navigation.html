@@ -16,22 +16,12 @@
                     <ul th:if="${session.user!=null}">
                         <li><a href="/clue">线索目录</a></li>
                         <li><a href="/toAudit">待审线索</a></li>
-                        <!--<li class="has-dropdown">-->
-                            <!--<a href="#">Dropdown</a>-->
-                            <!--<ul class="dropdown">-->
-                                <!--<li><a href="#">Web Design</a></li>-->
-                                <!--<li><a href="#">eCommerce</a></li>-->
-                                <!--<li><a href="#">Branding</a></li>-->
-                                <!--<li><a href="#">API</a></li>-->
-                            <!--</ul>-->
-                        <!--</li>-->
                         <li><a href="/news">新闻稿</a></li>
                         <li><a href="#">欢迎</a></li>
                         <li class="has-dropdown" >
                             <a href="#" th:text="${session.user.getUsername()}"></a>
                             <ul class="dropdown">
                                 <li><a href="/logout">退出登录</a></li>
-
                             </ul>
 
                         </li>

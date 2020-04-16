@@ -1,5 +1,7 @@
 package news.newsworker.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import news.newsworker.mapper.ClueMapper;
 import news.newsworker.model.Clue;
 import news.newsworker.model.ClueExample;
@@ -18,10 +20,11 @@ public class ClueService {
 
     @Autowired
     private ClueMapper clueMapper;
-    public List<Clue> selectClue(Clue clue) {
+    public PageInfo<Clue> selectClue(Clue clue) {
+        PageHelper.startPage(1,5);
         ClueExample clueExample=new ClueExample();
-        clueExample.createCriteria();
-        List<Clue> clues = clueMapper.selectByExample(clueExample);
-        return clues;
+        List<Clue> list = clueMapper.selectByExample(clueExample);
+        PageInfo<Clue> pageInfo = new PageInfo<Clue>(list);
+        return pageInfo;
     }
 }

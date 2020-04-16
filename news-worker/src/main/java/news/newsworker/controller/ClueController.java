@@ -1,10 +1,13 @@
 package news.newsworker.controller;
 import	java.net.Authenticator;
 
+import com.github.pagehelper.PageInfo;
 import news.newsworker.model.Clue;
 import news.newsworker.service.ClueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 /**
@@ -17,10 +20,11 @@ public class ClueController {
     @Autowired
     private ClueService clueService;
 
-    @PostMapping("/clue")
-    public String clue(){
+    @GetMapping("/clue")
+    public String clue(Model model){
         Clue clue = new Clue();
-        clueService.selectClue(clue);
+        PageInfo<Clue> cluePageInfo=clueService.selectClue(clue);
+        model.addAttribute("cluePageInfo",cluePageInfo);
         return "clue";
     }
 }
