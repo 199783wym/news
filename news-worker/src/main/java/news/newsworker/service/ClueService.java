@@ -21,7 +21,7 @@ public class ClueService {
     @Autowired
     private ClueMapper clueMapper;
     public PageInfo<Clue> selectClue(Clue clue) {
-        PageHelper.startPage(1,5);
+        PageHelper.startPage(2,5);
         ClueExample clueExample=new ClueExample();
         List<Clue> list = clueMapper.selectByExample(clueExample);
         PageInfo<Clue> pageInfo = new PageInfo<Clue>(list);

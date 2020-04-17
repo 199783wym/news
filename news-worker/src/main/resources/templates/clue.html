@@ -37,6 +37,10 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="css/clue.css">
+
+
+
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -55,30 +59,47 @@
 <div id="page">
 
 
-    <div class="page-inner">
+    <div  th:insert="~{navigation :: nav}"></div>
+    <!-- Single button -->
 
-        <div th:insert="~{navigation :: nav}"></div>
-        <!-- Single button -->
-        <div class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Action <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-            </ul>
-        </div>
-        <div  th:insert="~{navigation :: nav}"></div>
-        <div id="clue-content">
-            <div class="media"   th:each="clue:${cluePageInfo.list}">
+        <div id="clue-content" class="col-xs-12 col-sm-12 col-md-12	 col-lg-12">
+            <form id="select_form" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <select class="form-control col-xs-12 col-sm-12 col-md-3 col-lg-3" >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <select class="form-control col-xs-12 col-sm-12 col-md-3 col-lg-3" >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <select class="form-control col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <select class="form-control col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </form>
+            <div class="media col-xs-12 col-sm-12 col-md-12 col-lg-12"   th:each="clue:${cluePageInfo.list}">
                 <div class="media-left">
                     <a href="#">
                         <!--<img class="media-object img-circle" th:src="${question.user.avatarUrl}"-->
                         <!--src="https://avatars3.githubusercontent.com/u/36687898?v=4">-->
                     </a>
+
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">
