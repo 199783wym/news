@@ -1,3 +1,17 @@
 #select_form{
     margin-top:80px;
 }
+.tap_select{
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 46px;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#page{
+    padding-left: 300px;
+    padding-right: 300px;
+}
