@@ -28,8 +28,8 @@ public class LoginController {
 
     @PostMapping("/login")
     public String login(
-            @RequestParam(value = "username",required =false)String username,
-            @RequestParam(value = "password",required =false)String password,
+            @RequestParam(value = "userName",required =false)String username,
+            @RequestParam(value = "passWord",required =false)String password,
             HttpServletRequest request,
             HttpServletResponse response,
             Model model
@@ -39,7 +39,7 @@ public class LoginController {
         if(flag){
             response.addCookie(new Cookie("username",username));
         }
-       return "redirect:/";
+       return "redirect:/clue";
     }
 
     @GetMapping("/logout")
