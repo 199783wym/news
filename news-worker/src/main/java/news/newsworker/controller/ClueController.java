@@ -27,6 +27,7 @@ public class ClueController {
         //查字典
         List<Dictionary> clueTypes= clueService.search(1L);
         model.addAttribute("ClueTypes", clueTypes);
+
         Clue clue = new Clue();
         PageInfo<Clue> cluePageInfo=clueService.selectClue(clue);
         model.addAttribute("cluePageInfo",cluePageInfo);
