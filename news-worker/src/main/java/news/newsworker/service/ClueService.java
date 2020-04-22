@@ -1,17 +1,19 @@
 package news.newsworker.service;
+import	java.awt.print.Book;
 import	java.security.KeyStore.Entry.Attribute;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import news.newsworker.dto.ClueDTO;
 import news.newsworker.mapper.ClueMapper;
 import news.newsworker.mapper.DictionaryMapper;
-import news.newsworker.model.Clue;
-import news.newsworker.model.ClueExample;
-import news.newsworker.model.Dictionary;
-import news.newsworker.model.DictionaryExample;
+import news.newsworker.mapper.UserMapper;
+import news.newsworker.model.*;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,12 +28,24 @@ public class ClueService {
     private DictionaryMapper dictionaryMapper;
     @Autowired
     private ClueMapper clueMapper;
+    @Autowired
+    private UserMapper userMapper;
 
-    public PageInfo<Clue> selectClue(Clue clue) {
+    public PageInfo<ClueDTO> selectClue(Clue clue) {
         PageHelper.startPage(2, 5);
         ClueExample clueExample = new ClueExample();
         List<Clue> list = clueMapper.selectByExample(clueExample);
-        PageInfo<Clue> pageInfo = new PageInfo<Clue>(list);
+        List<ClueDTO> clueDTOS = new ArrayList<>();
+        for(Clue clue1:list){
+            User user = userMapper.selectByPrimaryKey(clue1.getCreateId());
+            ClueDTO clueDTO =new ClueDTO();
+            BeanUtils.copyProperties(clue1, clueDTO);
+            clueDTO.setUser(user);
+            clueDTOS.add(clueDTO);
+
+        }
+
+        PageInfo<ClueDTO> pageInfo = new PageInfo<ClueDTO>(clueDTOS);
         return pageInfo;
     }
 
@@ -50,5 +64,14 @@ public class ClueService {
         } else {
             return dictionaries.get(0);
         }
+    }
+
+    public ClueDTO getById(Long id) {
+        Clue clue = clueMapper.selectByPrimaryKey(id);
+        ClueDTO clueDTO=new ClueDTO();
+        User user = userMapper.selectByPrimaryKey(clue.getCreateId());
+        BeanUtils.copyProperties(clue,clueDTO);
+        clueDTO.setUser(user);
+        return clueDTO;
     }
 }

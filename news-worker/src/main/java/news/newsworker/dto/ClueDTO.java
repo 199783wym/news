@@ -1,5 +1,6 @@
 package news.newsworker.dto;
 
+import lombok.Data;
 import news.newsworker.model.User;
 
 /**
@@ -7,6 +8,7 @@ import news.newsworker.model.User;
  * @Date: 2020/4/21 17:00
  * @Version 1.0
  */
+@Data
 public class ClueDTO {
 
     private Long id;

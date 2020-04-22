@@ -3,6 +3,7 @@ import	java.net.Authenticator;
 import java.util.List;
 
 import com.github.pagehelper.PageInfo;
+import news.newsworker.dto.ClueDTO;
 import news.newsworker.model.Clue;
 import news.newsworker.model.Dictionary;
 import news.newsworker.service.ClueService;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 /**
@@ -29,8 +31,20 @@ public class ClueController {
         model.addAttribute("ClueTypes", clueTypes);
 
         Clue clue = new Clue();
-        PageInfo<Clue> cluePageInfo=clueService.selectClue(clue);
+        PageInfo<ClueDTO> cluePageInfo=clueService.selectClue(clue);
         model.addAttribute("cluePageInfo",cluePageInfo);
         return "clue";
+    }
+
+    @GetMapping("/clue/{id}")
+    public String edit(@PathVariable(name = "id") Long id,
+                       Model model) {
+        ClueDTO clue = clueService.getById(id);
+        model.addAttribute("clue", clue);
+//        model.addAttribute("title", clue.getTitle());
+//        model.addAttribute("description", question.getDescription());
+//        model.addAttribute("tag", question.getTag());
+//        model.addAttribute("id", question.getId());
+        return "cluePage";
     }
 }
