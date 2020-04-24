@@ -32,20 +32,22 @@ public class ClueService {
     private UserMapper userMapper;
 
     public PageInfo<ClueDTO> selectClue(Clue clue) {
-        PageHelper.startPage(2, 5);
+
         ClueExample clueExample = new ClueExample();
+        PageHelper.startPage(2, 5);
         List<Clue> list = clueMapper.selectByExample(clueExample);
         List<ClueDTO> clueDTOS = new ArrayList<>();
+        PageInfo<Clue> befPageInfo = new PageInfo<Clue>(list);
         for(Clue clue1:list){
             User user = userMapper.selectByPrimaryKey(clue1.getCreateId());
             ClueDTO clueDTO =new ClueDTO();
             BeanUtils.copyProperties(clue1, clueDTO);
             clueDTO.setUser(user);
             clueDTOS.add(clueDTO);
-
         }
-
-        PageInfo<ClueDTO> pageInfo = new PageInfo<ClueDTO>(clueDTOS);
+        PageInfo<ClueDTO> pageInfo = new PageInfo<ClueDTO>();
+        BeanUtils.copyProperties(befPageInfo,pageInfo);
+        pageInfo.setList(clueDTOS);
         return pageInfo;
     }
 
