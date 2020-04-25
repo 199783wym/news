@@ -9,6 +9,7 @@ import news.newsworker.mapper.ClueMapper;
 import news.newsworker.mapper.DictionaryMapper;
 import news.newsworker.mapper.UserMapper;
 import news.newsworker.model.*;
+import news.newsworker.util.UserContext;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -75,5 +76,16 @@ public class ClueService {
         BeanUtils.copyProperties(clue,clueDTO);
         clueDTO.setUser(user);
         return clueDTO;
+    }
+
+    public void pass1(Long clueId) {
+        Clue updateClue =new Clue();
+        updateClue.setStatus(1L);
+        updateClue.setAudit1(1L);
+        updateClue.setAudit1No(UserContext.getLoginInfo().getId());
+        ClueExample clueExample=new ClueExample();
+        clueExample.createCriteria()
+                .andIdEqualTo(clueId);
+        clueMapper.updateByExampleSelective(updateClue, clueExample);
     }
 }

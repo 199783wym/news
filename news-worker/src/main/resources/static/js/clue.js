@@ -1,4 +1,4 @@
-function pass1() {
+function pass1(e) {
     var clueId = e.getAttribute("data-id");
     $.ajax({
         type:"POST",
@@ -7,7 +7,7 @@ function pass1() {
         data:JSON.stringify({
             "clueId":clueId
         }),
-        success:function(data) {
+        success:function(response) {
             if (response.code ==200){
                 window.location.reload();
             } else {

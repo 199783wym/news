@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.github.pagehelper.PageInfo;
 import news.newsworker.dto.ClueDTO;
+import news.newsworker.dto.RequestDTO;
+import news.newsworker.dto.ResultDTO;
 import news.newsworker.model.Clue;
 import news.newsworker.model.Dictionary;
 import news.newsworker.service.ClueService;
@@ -24,7 +26,7 @@ public class ClueController {
     @Autowired
     private ClueService clueService;
 
-    @GetMapping("/clue")
+    @RequestMapping("/clue")
     public String clue(Model model){
         //查字典
         List<Dictionary> clueTypes= clueService.search(1L);
@@ -50,9 +52,9 @@ public class ClueController {
 
     @ResponseBody
     @RequestMapping("/pass")
-    public Object pass(String clueId,
+    public Object pass(@RequestBody RequestDTO requestDTO,
                        HttpServletRequest request){
-        System.out.println(clueId);
-        return null;
+        clueService.pass1(requestDTO.getClueId());
+        return ResultDTO.okOf();
     }
 }
