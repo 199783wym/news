@@ -152,25 +152,28 @@
             </div>
             <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h4>发起人</h4>
+                    <h4>审核意见</h4>
 
-                    <div class="media">
-                        <div class="media-left">
-                            <!--<a href="#">-->
-                                <!--<img class="media-object img-rounded" th:src="${question.user.avatarUrl}"-->
-                                     <!--src="https://avatars3.githubusercontent.com/u/36687898?v=4">-->
-                            <!--</a>-->
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <span th:href="@{'/question/'+${question.id}}" th:text="${question.user.name}"></span>
-                            </h4>
-                        </div>
-                    </div>
                     <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h4>相关问题</h4>
+                    <span th:switch="${clue.status}">
+                        <span th:case="0" >
+                            <button th:data-id="${clue.id}" type="button" class="btn btn-success" onclick="pass1()">一审通过</button>
+                            <button th:data-id="${clue.id}" type="button" class="btn btn-danger" onclick="nopass1()">审核不通过</button>
+                        </span>
+                        <span th:case="1">
+                            <button th:data-id="${clue.id}" type="button" class="btn btn-success" onclick="pass2()">二审通过</button>
+                            <button th:data-id="${clue.id}" type="button" class="btn btn-danger" onclick="nopass2()">审核不通过</button>
+                        </span>
+                        <span th:case="2"  class="label label-info">
+                             <button  th:data-id="${clue.id}" type="button" class="btn btn-success" onclick="publish()">发布</button>
+                        </span>
+                        <span th:case="3"  class="label label-success">已发布</span>
+                        <span th:case="4"  class="label label-default">稿件已退回</span>
+                        <span th:case="*"  class="label label-error">稿件状态异常</span>
+
+
                 </div>
             </div>
         </div>

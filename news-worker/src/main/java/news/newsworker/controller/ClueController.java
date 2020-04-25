@@ -10,9 +10,9 @@ import news.newsworker.service.ClueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @Author: ym
@@ -46,5 +46,13 @@ public class ClueController {
 //        model.addAttribute("tag", question.getTag());
 //        model.addAttribute("id", question.getId());
         return "cluePage";
+    }
+
+    @ResponseBody
+    @RequestMapping("/pass")
+    public Object pass(String clueId,
+                       HttpServletRequest request){
+        System.out.println(clueId);
+        return null;
     }
 }
