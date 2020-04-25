@@ -57,4 +57,13 @@ public class ClueController {
         clueService.pass1(requestDTO.getClueId());
         return ResultDTO.okOf();
     }
+
+    @ResponseBody
+    @RequestMapping("/nopass")
+    public Object nopass(@RequestBody RequestDTO requestDTO,
+                       HttpServletRequest request){
+        clueService.nopass(requestDTO.getClueId());
+        return ResultDTO.okOf();
+    }
+
 }

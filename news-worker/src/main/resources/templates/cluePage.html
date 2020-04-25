@@ -161,11 +161,11 @@
                     <span th:switch="${clue.status}">
                         <span th:case="0" >
                             <button th:data-id="${clue.id}" type="button" class="btn btn-success" onclick="pass1(this)">一审通过</button>
-                            <button th:data-id="${clue.id}" type="button" class="btn btn-danger" onclick="nopass1(this)">审核不通过</button>
+                            <button th:data-id="${clue.id}" type="button" class="btn btn-danger" onclick="nopass(this)">审核不通过</button>
                         </span>
                         <span th:case="1">
                             <button th:data-id="${clue.id}" type="button" class="btn btn-success" onclick="pass2(this)">二审通过</button>
-                            <button th:data-id="${clue.id}" type="button" class="btn btn-danger" onclick="nopass2(this)">审核不通过</button>
+                            <button th:data-id="${clue.id}" type="button" class="btn btn-danger" onclick="nopass(this)">审核不通过</button>
                         </span>
                         <span th:case="2"  class="label label-info">
                              <button  th:data-id="${clue.id}" type="button" class="btn btn-success" onclick="publish(this)">发布</button>

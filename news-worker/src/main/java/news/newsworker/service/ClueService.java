@@ -88,4 +88,15 @@ public class ClueService {
                 .andIdEqualTo(clueId);
         clueMapper.updateByExampleSelective(updateClue, clueExample);
     }
+
+    public void nopass(Long clueId) {
+        Clue updateClue =new Clue();
+        updateClue.setStatus(4L);
+        updateClue.setReturnNo(UserContext.getLoginInfo().getId());
+        ClueExample clueExample=new ClueExample();
+        clueExample.createCriteria()
+                .andIdEqualTo(clueId);
+        clueMapper.updateByExampleSelective(updateClue, clueExample);
+
+    }
 }

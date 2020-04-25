@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d3b5612-fa0a-4761-bc10-87648117da3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/dto/RequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/dto/ResultDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/exception/CustomizeErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/exception/CustomizeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/exception/ICustomizeErrorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/GameView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/ImageUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_code/Link/app/src/main/java/com/example/ym/link/MainActivity.java" afterDir="false" />
@@ -288,11 +283,27 @@
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/out/production/Thread_test_2/com/cdut/ym/xmlreader/reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/out/production/Thread_test_2/com/cdut/ym/xmlreader/reader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Thread_test_2/src/com/cdut/ym/xmlreader/reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread_test_2/src/com/cdut/ym/xmlreader/reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7c69a7b-e51e-42f3-a53d-2694d4cc9d75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f7c69a7b-e51e-42f3-a53d-2694d4cc9d75.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/ClueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/ClueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/AdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/ClueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/ClueMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/DictionaryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/DictionaryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/AdminExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/AdminExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/Clue.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/Clue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/ClueExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/ClueExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/DictionaryExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/DictionaryExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/UserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/model/UserExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/service/ClueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/service/ClueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/ClueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/ClueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/DictionaryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/DictionaryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/clue.js" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/resources/static/js/clue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-worker/src/main/resources/templates/clue.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/resources/templates/clue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-worker/src/main/resources/templates/cluePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-worker/src/main/resources/templates/cluePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -336,13 +347,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="news: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="news: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -377,10 +381,10 @@
           <entry key="gif" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="54" />
-          <entry key="java" value="133" />
+          <entry key="java" value="136" />
           <entry key="jpg" value="35" />
           <entry key="js" value="13" />
-          <entry key="md" value="6" />
+          <entry key="md" value="7" />
           <entry key="png" value="9" />
           <entry key="properties" value="9" />
           <entry key="sql" value="1" />
@@ -395,9 +399,9 @@
           <entry key="Database Element" value="10" />
           <entry key="HTML" value="54" />
           <entry key="Image" value="45" />
-          <entry key="JAVA" value="133" />
+          <entry key="JAVA" value="136" />
           <entry key="JavaScript" value="13" />
-          <entry key="Markdown" value="6" />
+          <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="9" />
           <entry key="Scratch" value="1" />
@@ -410,10 +414,10 @@
           <entry key="css" value="423" />
           <entry key="dummy" value="1" />
           <entry key="html" value="2378" />
-          <entry key="java" value="3493" />
-          <entry key="js" value="584" />
+          <entry key="java" value="3526" />
+          <entry key="js" value="747" />
           <entry key="properties" value="32" />
-          <entry key="sql" value="207" />
+          <entry key="sql" value="213" />
           <entry key="xml" value="158" />
         </counts>
       </usages-collector>
@@ -421,11 +425,11 @@
         <counts>
           <entry key="CSS" value="423" />
           <entry key="HTML" value="2378" />
-          <entry key="JAVA" value="3493" />
-          <entry key="JavaScript" value="584" />
+          <entry key="JAVA" value="3526" />
+          <entry key="JavaScript" value="747" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="32" />
-          <entry key="SQL" value="207" />
+          <entry key="SQL" value="213" />
           <entry key="Scratch" value="21" />
           <entry key="XML" value="158" />
         </counts>
@@ -437,8 +441,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/ClueController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="177">
+              <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -449,8 +453,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/static/js/clue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="138">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -470,17 +474,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/dto/RequestDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="92">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/service/ClueService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1414">
-              <caret line="88" column="20" lean-forward="true" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+            <state relative-caret-position="138">
+              <caret line="91" column="19" lean-forward="true" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1172#1178#0" expanded="true" />
@@ -490,19 +494,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/util/UserContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="18" column="41" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/templates/cluePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="192" column="40" lean-forward="true" selection-start-line="192" selection-start-column="40" selection-end-line="192" selection-end-column="40" />
+            <state relative-caret-position="220">
+              <caret line="168" column="31" lean-forward="true" selection-start-line="168" selection-start-column="31" selection-end-line="168" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#span#0;n#span#0;n#span#2;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#span#1;n#span#0;n#span#2;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -511,7 +506,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/templates/clue.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="703">
@@ -599,13 +594,13 @@
         <option value="$PROJECT_DIR$/news-worker/src/main/resources/static/css/clue.css" />
         <option value="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/dto/RequestDTO.java" />
-        <option value="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/service/ClueService.java" />
         <option value="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/exception/ICustomizeErrorCode.java" />
         <option value="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/dto/ResultDTO.java" />
-        <option value="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/ClueController.java" />
-        <option value="$PROJECT_DIR$/news-worker/src/main/resources/static/js/clue.js" />
-        <option value="$PROJECT_DIR$/news-worker/src/main/resources/templates/cluePage.html" />
         <option value="$PROJECT_DIR$/news-worker/src/main/resources/templates/clue.html" />
+        <option value="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/ClueController.java" />
+        <option value="$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/service/ClueService.java" />
+        <option value="$PROJECT_DIR$/news-worker/src/main/resources/templates/cluePage.html" />
+        <option value="$PROJECT_DIR$/news-worker/src/main/resources/static/js/clue.js" />
       </list>
     </option>
   </component>
@@ -662,7 +657,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="951" />
     <option name="y" value="-9" />
     <option name="width" value="978" />
@@ -789,7 +784,7 @@
     <property name="SearchEverywhereHistoryKey" value="/error&#9;PSI&#9;JAVA://news.newsuser.exception.ICustomizeErrorCode&#10;getUsername&#9;PSI&#9;JAVA://news.newsworker.model.Admin#getUsername&#10;style.css&#9;FILE&#9;file://D:/codebase/java/news/news-worker/src/main/resources/static/css/style.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587834053570" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587839061409" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -884,12 +879,12 @@
       <workItem from="1587039788095" duration="5781000" />
       <workItem from="1587132897572" duration="42232000" />
       <workItem from="1587645972751" duration="2935000" />
-      <workItem from="1587731024661" duration="20758000" />
+      <workItem from="1587731024661" duration="23013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232336000" />
+    <option name="totallyTimeSpent" value="234591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -904,7 +899,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49268293" visible="true" weight="0.27882037" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49268293" visible="true" weight="0.27882037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" sideWeight="0.50731707" side_tool="true" weight="0.21045576" />
@@ -921,7 +916,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.56233245" weight="0.22644377" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.56233245" weight="0.22580644" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.43766755" side_tool="true" weight="0.22434017" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3176292" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -929,7 +924,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.4544236" side_tool="true" weight="0.4589443" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.5455764" visible="true" weight="0.3739003" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.5455764" visible="true" weight="0.5645161" />
       <window_info anchor="bottom" id="Database Console" order="17" weight="0.32991204" />
       <window_info anchor="bottom" id="Problems" order="18" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1001,6 +996,12 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/service/ClueService.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1008,27 +1009,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/java/news/newsuser/util/UserContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/static/css/publish.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/templates/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news-user/src/main/resources/templates/navigation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1192,16 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="19">
-            <caret line="1" column="38" selection-start-line="1" selection-end-line="1" selection-end-column="65" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -1296,24 +1266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/dto/RequestDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/service/ClueService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1414">
-          <caret line="88" column="20" lean-forward="true" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1172#1178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/exception/CustomizeErrorCode.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1322,34 +1274,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/exception/ICustomizeErrorCode.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/ClueController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/static/js/clue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/templates/cluePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="192" column="40" lean-forward="true" selection-start-line="192" selection-start-column="40" selection-end-line="192" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#span#0;n#span#0;n#span#2;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#1;n#span#0;n#span#2;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/dto/ResultDTO.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1367,6 +1291,83 @@
           <caret line="37" column="49" lean-forward="true" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="38" selection-start-line="1" selection-end-line="1" selection-end-column="65" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/static/js/clue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-worker/src/main/resources/templates/cluePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="168" column="31" lean-forward="true" selection-start-line="168" selection-start-column="31" selection-end-line="168" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#span#0;n#span#2;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#span#0;n#span#2;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="887" selection-start-line="887" selection-end-line="887" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.4.RELEASE/spring-webmvc-5.2.4.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="1054" selection-start-line="1054" selection-end-line="1054" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/dto/RequestDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/controller/ClueController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-worker/src/main/java/news/newsworker/service/ClueService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="91" column="19" lean-forward="true" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1172#1178#0" expanded="true" />
           </folding>
         </state>
       </provider>
