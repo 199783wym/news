@@ -1,7 +1,11 @@
-#content_publish{
+#content_publish {
     padding-top: 90px;
     padding-left: 30px;
     padding-right: 30px;
+    background-size:100% 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    height:1200px;
 }
 .row >*{
     color: #000;
@@ -23,4 +27,8 @@
 }
 .jumbotron{
     padding-top: 30px;
+}
+
+#block_left{
+    padding-right: 100px;
 }

@@ -16,25 +16,12 @@
                     <ul th:if="${session.user!=null}" >
                         <li ><a href="/publish" >发布线索</a></li>
                         <li ><a href="/myclue" >我的线索</a></li>
-                        <!--<li><a href="tour.html">待审线索</a></li>-->
-                        <!--<li class="has-dropdown">-->
-                            <!--<a href="#">Dropdown</a>-->
-                            <!--<ul class="dropdown">-->
-                                <!--<li><a href="#">Web Design</a></li>-->
-                                <!--<li><a href="#">eCommerce</a></li>-->
-                                <!--<li><a href="#">Branding</a></li>-->
-                                <!--<li><a href="#">API</a></li>-->
-                            <!--</ul>-->
-                        <!--</li>-->
-                        <!--<li><a href="pricing.html"></a></li>-->
-                        <!--<li><a href="contact.html">Contact</a></li>-->
                         <li ><a href="#" >欢迎</a></li>
                         <li class="has-dropdown">
                             <a href="#"  th:text="${session.user.getName()}"></a>
                             <ul class="dropdown">
-                                <li><a href="">个人中心</a></li>
+                                <li><a href="/info">个人中心</a></li>
                                 <li><a href="/logout">退出登录</a></li>
-
                             </ul>
 
                         </li>

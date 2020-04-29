@@ -71,6 +71,9 @@ public class LoginController {
         User user =new User();
         user.setName(userDTO.getUsername());
         user.setPasswordMd5(DigestUtils.md5DigestAsHex(userDTO.getPassword().getBytes()));
+        user.setPhone(userDTO.getPhone());
+        user.setGmtCreate(System.currentTimeMillis());
+        user.setGmtModified(System.currentTimeMillis());
         loginService.register(user);
         return ResultDTO.okOf();
     }

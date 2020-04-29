@@ -2,6 +2,7 @@ package news.newsuser.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import news.newsuser.dto.UserClueDTO;
 import news.newsuser.mapper.ClueMapper;
 import news.newsuser.model.Clue;
 import news.newsuser.model.ClueExample;
@@ -29,5 +30,16 @@ public class ClueService {
         List<Clue> list = clueMapper.selectByExample(clueExample);
         PageInfo<Clue> pageInfo = new PageInfo<Clue>(list);
         return pageInfo;
+    }
+
+    public UserClueDTO searchUserClue() {
+        UserClueDTO userClueDTO =new UserClueDTO();
+        ClueExample clueExample = new ClueExample();
+        clueExample.createCriteria().andCreateIdEqualTo(UserContext.getLoginInfo().getId());
+        userClueDTO.setTotalCount(clueMapper.countByExample(clueExample));
+        ClueExample clueExample2 = new ClueExample();
+        clueExample2.createCriteria().andCreateIdEqualTo(UserContext.getLoginInfo().getId()).andStatusEqualTo(4L);
+        userClueDTO.setSuccessCount(clueMapper.countByExample(clueExample2));
+        return userClueDTO;
     }
 }
