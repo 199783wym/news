@@ -63,68 +63,39 @@
 <div class="row" id="content_publish" style="background-image: url(images/wall04.png)">
     <div  th:insert="~{navigation :: nav}"></div>
     <div id="block_left"class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-        <h1 ><span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true" style="color: #000;">提交线索</span></h1>
-        <hr style="color: #000;">
+        <h1 ><span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true" style="color: #000;">个人信息</span></h1>
+        <hr>
+        <table class="table table-striped">
+            <tr>
+                <td>用户名</td>
+                <td th:text="${user.name}"></td>
+            </tr>
+            <tr>
+                <td>手机号</td>
 
-        <form action="/publish" method="post">
-            <input type="hidden" th:value="${session.user.getId()}" name="id">
-            <div class="form-group">
-                <label for="title">线索概括</label>
-                <input type="text" class="form-control"  id="title" name="title"
-                       placeholder="概括...">
-            </div>
-            <div class="form-group">
-                <label for="description">线索内容（必填，请参考右侧提示）</label>
-                <textarea name="description" id="description"  class="form-control"
-                          cols="30" rows="10"> </textarea>
-            </div>
-            <div class="form-group">
-                <label for="type">添加标签</label>
-                <!--<input tyep="text" class="form-control"  id="tag" name="tag"-->
-                <!--placeholder="输入标签 用,分割">-->
-                <select id ="type" name ="type" class="form-control col-lg-9 col-md-12 col-sm-12 col-xs-12" >
-                    <option  th:each="type:${ClueTypes}" th:text="${type.name}"></option>
+                <td th:text="${user.phone}"></td>
+            </tr>
+            <tr>
+                <td>是否认证</td>
+                <span th:switch="${user.renzheng}">
+                    <td th:case="0">未认证</td>
+                    <td th:case="1">已认证</td>
+                    <td th:case="*">认证状态错误</td>
+                </span>
+            </tr>
+            <span th:if="${user.renzheng}">
+                <tr>
+                    <td>认证单位</td>
+                    <td th:text="${user.renzhengString}"></td>
+                </tr>
+            </span>
+            <tr>
+                <td>注册时间</td>
+                <td th:text="${#dates.format(user.gmtCreate,'yyyy-MM-dd HH:mm')}"></td>
+            </tr>
 
-                </select>
+        </table>
 
-            </div>
-
-            <label class="control-label"> 线索图片 </label>
-            <input id="uploadImg" type="file" class="file">
-
-            <!-- 图片文本框 -->
-            <input type="file" class="form-control" id="file" name="file" th:onchange="preview(this)">
-
-            <!-- 这个是在上传之前回显图片图片展示 -->
-            <div id="preview">
-                　　<!--这个是为了将页面返回的图片展示出来的.默认隐藏-->
-                　　<img style="width: 100px; height: 100px;display:none" id="imgHidden" />
-            </div>
-
-            <!-- 提交...这里pageIndex和pageSize可传可不传,主要取决于提交之后是否需要回到当前页面. -->
-            <button type="submit" th:onclick="submitForm([[${pageIndex}]],[[${pageSize}]])" class="btn btn-primary">提交</button>
-
-            <div class="container-fluid main">
-                <div class="row">
-                    <!--<div calss="col-lg-9 col-md-12 col-sm-12 col-xs-12">-->
-                    <!--<div class="alert alert-danger col-lg-9 col-md-12 col-sm-12 col-xs-12"></div>-->
-                    <!--</div>-->
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <div class="alert alert-danger col-lg-9 col-md-12 col-sm-12 col-xs-12" th:text="${error}"
-                             th:if="${error}!=null"></div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-12 col-sm -12 col-xs-12">
-                        <button type="submit" class="btn btn-success btn-publish ">
-                            发布
-                        </button>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </form>
     </div>
     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
         <h3 style="color: #000;font-size: 40px">线索成就</h3>
@@ -147,10 +118,10 @@
               </div>
               <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                   <div>
-                      <span th:text="${user.getScore()}">剩余积分</span>
+                      <span >剩余积分</span>
                   </div>
                   <div class="roundedRectangle" style="background: #f28e16;">
-                      <p>11</p>
+                      <p th:text="${user.getScore()}">0</p>
                   </div>
               </div>
 
