@@ -139,7 +139,7 @@
         <hr style="color: #000;">
 
         <form action="/publish" method="post">
-            <input type="hidden" th:value="${session.user.getId()}" name="id">
+            <input type="hidden" th:value="${session.user.getId()}" name="id" id="id">
             <div class="form-group">
                 <label for="title">线索概括</label>
                 <input type="text" class="form-control"  id="title" name="title"

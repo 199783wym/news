@@ -46,6 +46,8 @@ public class LoginController {
         boolean flag = loginService.isUser(username, DigestUtils.md5DigestAsHex(password.getBytes()));
         if(flag){
             response.addCookie(new Cookie("username",username));
+            String ip = request.getRemoteAddr();
+            loginService.addIplog(ip,username);
             return "redirect:/publish";
         }else{
             model.addAttribute("error", "登录错误");
@@ -53,7 +55,6 @@ public class LoginController {
         }
 
     }
-
     @GetMapping("/logout")
     public String logout(HttpServletRequest request,
                          HttpServletResponse response) {

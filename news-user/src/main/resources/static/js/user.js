@@ -2,6 +2,7 @@ function post(){
     var username=$("#username_ri").val();
     var password=$("#password_ri").val();
     var password2=$("#password2_ri").val();
+    var phone=$("phone").val();
     if (password!=password2){
         alert("两次输入的密码不同")
     }
@@ -11,7 +12,8 @@ function post(){
         contentType :'application/json',
         data:JSON.stringify({
             "username":username,
-            "password":password
+            "password":password,
+            "phone":phone
         }),
         success: function(response){
             console.log(response);

@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!--&lt;!&ndash; Facebook and Twitter integration &ndash;&gt;-->
+    <!--<meta property="og:title" content=""/>-->
+    <!--<meta property="og:image" content=""/>-->
+    <!--<meta property="og:url" content=""/>-->
+    <!--<meta property="og:site_name" content=""/>-->
+    <!--<meta property="og:description" content=""/>-->
+    <!--<meta name="twitter:title" content="" />-->
+    <!--<meta name="twitter:image" content="" />-->
+    <!--<meta name="twitter:url" content="" />-->
+    <!--<meta name="twitter:card" content="" />-->
+
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">-->
+
+    <!--&lt;!&ndash; Animate.css &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="css/animate.css">-->
+    <!--&lt;!&ndash; Icomoon Icon Fonts&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="css/icomoon.css">-->
+    <!--&lt;!&ndash; Themify Icons&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="css/themify-icons.css">-->
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.css">
+
+
+    <!--&lt;!&ndash; Magnific Popup &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="css/magnific-popup.css">-->
+
+    <!--&lt;!&ndash; Owl Carousel  &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="css/owl.carousel.min.css">-->
+    <!--<link rel="stylesheet" href="css/owl.theme.default.min.css">-->
+
+    <link rel="stylesheet" href="/css/clue.css">
+
+
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!--&lt;!&ndash; Modernizr JS &ndash;&gt;-->
+    <!--<script src="js/modernizr-2.6.2.min.js"></script>-->
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <!--<script src="js/respond.min.js"></script>-->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+
+</head>
+<body>
+
+<div class="gtco-loader"></div>
+<div  th:insert="~{navigation :: nav}"></div>
+
+<div id="page" class="container-fluid main" >
+    <div class="row" style="background: white">
+        <div id="clue-content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <form id="select_form" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                <div class="container-fluid row">
+                    <button type="button" class="btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-search col-lg-1" aria-hidden="true"></span> 搜索
+                    </button>
+
+                    <span class="tap_text col-xs-12 col-sm-12 col-md-3 col-lg-1">类别</span>
+
+                    <select class="tap_select col-xs-12 col-sm-12 col-md-3 col-lg-1">
+                        <option>全部</option>
+                        <option  th:each="type:${ClueTypes}" th:text="${type.name}"></option>
+
+                    </select>
+                    <span class="tap_text col-xs-12 col-sm-12 col-md-3 col-lg-1">状态</span>
+                    <select class="tap_select col-xs-12 col-sm-12 col-md-3 col-lg-1" >
+                        <option>全部</option>
+                        <option>未审核</option>
+                        <option>一审通过</option>
+                        <option>二审通过</option>
+                        <option>已发布</option>
+                    </select>
+                    <span class="tap_text col-xs-12 col-sm-12 col-md-3 col-lg-1">类别</span>
+                    <select class="tap_select col-xs-12 col-sm-12 col-md-3 col-lg-1 ">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <span class="tap_text col-xs-12 col-sm-12 col-md-3 col-lg-1">类别</span>
+                    <select class="tap_select col-xs-12 col-sm-12 col-md-3 col-lg-1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+
+
+
+
+
+
+            </form>
+            <div class="media col-xs-12 col-sm-12 col-md-12 col-lg-12"   th:each="clue:${cluePageInfo.list}">
+                <div class="media-left">
+                    <a href="#">
+                        <!--<img class="media-object img-circle" th:src="${question.user.avatarUrl}"-->
+                        <!--src="https://avatars3.githubusercontent.com/u/36687898?v=4">-->
+                    </a>
+
+                </div>
+                <hr>
+                <div class="media-body media ">
+                    <h3 id="clue_heading" class="media-heading">
+                        <!--标题-->
+                        <a id="title" th:href="@{'/clue/'+${clue.id}}" th:text="${clue.title}"></a>
+                        <!--状态-->
+                        <span th:switch="${clue.status}">
+                        <span th:case="0"  class="label label-warning">待审核</span>
+                        <span th:case="1"  class="label label-info">一审通过</span>
+                        <span th:case="2"  class="label label-info">二审通过</span>
+                        <span th:case="3"  class="label label-success">已发布</span>
+                        <span th:case="4"  class="label label-danger">未通过</span>
+                        <span th:case="*"  class="label label-danger">状态异常</span>
+                    </span>
+                    </h3>
+
+                    <span id="clue_content" th:text="${clue.content}"></span><br>
+                    <!--<span class="text-desc"><span th:text="${question.commentCount}"></span> 个回复 •-->
+                    <!--<span th:text="${question.viewCount}"></span> 次浏览 •-->
+                    <div id="clue_time">
+                        <span>发布人</span>
+                        <span th:text="${clue.user.name}"></span>
+                        <span>发布时间：</span>
+                        <span th:text="${#dates.format(clue.gmtCreate,'yyyy-MM-dd HH:mm')}"></span></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <!--<li th:if="${cluePageInfo.isFirstPage}">-->
+                <!--<a href="/myclue?page=1" aria-label="Previous">-->
+                <!--<span aria-hidden="true">&lt;&lt;</span>-->
+                <!--</a>-->
+                <!--</li>-->
+                <li th:if="${cluePageInfo.hasPreviousPage}">
+                    <a th:href="@{/myclue(page=${cluePageInfo.pageNum -1})}" aria-label="Previous">
+                        <span aria-hidden="true">&lt;</span>
+                    </a>
+                </li>
+
+                <li th:class="${cluePageInfo.pageNum==page}?'active':''" th:each="page:${cluePageInfo.navigatepageNums}">
+                    <a th:href="@{/myclue(page=${page})}" th:text="${page}"></a>
+                </li>
+
+                <li th:if="${cluePageInfo.hasNextPage}">
+                    <a th:href="@{/myclue(page=${cluePageInfo.pageNum+1})}" aria-label="Previous">
+                        <span aria-hidden="true">&gt;</span>
+                    </a>
+                </li>
+                <!--<li th:if="${cluePageInfo.isLastPage}">-->
+                <!--<a th:href="@{/myclue(page=${pagination.totalPage})}" aria-label="Previous">-->
+                <!--<span aria-hidden="true">&gt;&gt;</span>-->
+                <!--</a>-->
+                <!--</li>-->
+            </ul>
+        </nav>
+    </div>
+
+</div>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

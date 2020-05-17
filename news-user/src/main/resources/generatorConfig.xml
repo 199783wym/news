@@ -36,6 +36,8 @@
         <table tableName="user" domainObjectName="User"></table>
         <table tableName="clue" domainObjectName="Clue"></table>
         <table tableName="dictionary" domainObjectName="Dictionary"></table>
+        <table tableName="iplog" domainObjectName="Iplog"></table>
+        <table tableName="renzheng" domainObjectName="Renzheng"></table>
 
     </context>
 </generatorConfiguration>
