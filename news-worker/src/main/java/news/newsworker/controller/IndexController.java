@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class IndexController {
     @GetMapping("/")
-    public String index(){
+    public String index(Model model){
         return "index";
     }
 }

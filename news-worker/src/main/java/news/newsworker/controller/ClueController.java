@@ -27,13 +27,15 @@ public class ClueController {
     private ClueService clueService;
 
     @RequestMapping("/clue")
-    public String clue(Model model){
+    public String clue(Model model,
+                       @RequestParam(name = "page", defaultValue = "1") Integer page,
+                       @RequestParam(name = "size", defaultValue = "5") Integer size){
         //查字典
         List<Dictionary> clueTypes= clueService.search(1L);
         model.addAttribute("ClueTypes", clueTypes);
 
         Clue clue = new Clue();
-        PageInfo<ClueDTO> cluePageInfo=clueService.selectClue(clue);
+        PageInfo<ClueDTO> cluePageInfo=clueService.selectClue(clue,page,size);
         model.addAttribute("cluePageInfo",cluePageInfo);
         return "clue";
     }
@@ -59,10 +61,26 @@ public class ClueController {
     }
 
     @ResponseBody
+    @RequestMapping("/pass2")
+    public Object pass2(@RequestBody RequestDTO requestDTO,
+                       HttpServletRequest request){
+        clueService.pass2(requestDTO.getClueId());
+        return ResultDTO.okOf();
+    }
+
+    @ResponseBody
     @RequestMapping("/nopass")
     public Object nopass(@RequestBody RequestDTO requestDTO,
                        HttpServletRequest request){
         clueService.nopass(requestDTO.getClueId());
+        return ResultDTO.okOf();
+    }
+
+    @ResponseBody
+    @RequestMapping("/publishClue")
+    public Object publishClue(@RequestBody RequestDTO requestDTO,
+                        HttpServletRequest request){
+        clueService.publish(requestDTO.getClueId());
         return ResultDTO.okOf();
     }
 

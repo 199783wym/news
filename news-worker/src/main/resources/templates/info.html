@@ -8,55 +8,15 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <!--&lt;!&ndash; Facebook and Twitter integration &ndash;&gt;-->
-    <!--<meta property="og:title" content=""/>-->
-    <!--<meta property="og:image" content=""/>-->
-    <!--<meta property="og:url" content=""/>-->
-    <!--<meta property="og:site_name" content=""/>-->
-    <!--<meta property="og:description" content=""/>-->
-    <!--<meta name="twitter:title" content="" />-->
-    <!--<meta name="twitter:image" content="" />-->
-    <!--<meta name="twitter:url" content="" />-->
-    <!--<meta name="twitter:card" content="" />-->
 
-    <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">-->
-
-    <!--&lt;!&ndash; Animate.css &ndash;&gt;-->
-    <!--<link rel="stylesheet" href="css/animate.css">-->
-    <!--&lt;!&ndash; Icomoon Icon Fonts&ndash;&gt;-->
-    <!--<link rel="stylesheet" href="css/icomoon.css">-->
-    <!--&lt;!&ndash; Themify Icons&ndash;&gt;-->
-    <!--<link rel="stylesheet" href="css/themify-icons.css">-->
-    <!-- Bootstrap  -->
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap-theme.css">
 
-
-    <!--&lt;!&ndash; Magnific Popup &ndash;&gt;-->
-    <!--<link rel="stylesheet" href="css/magnific-popup.css">-->
-
-    <!--&lt;!&ndash; Owl Carousel  &ndash;&gt;-->
-    <!--<link rel="stylesheet" href="css/owl.carousel.min.css">-->
-    <!--<link rel="stylesheet" href="css/owl.theme.default.min.css">-->
-
     <link rel="stylesheet" href="/css/clue.css">
     <link rel="stylesheet" href="/css/info.css">
-
-
-
     <!-- Theme style  -->
     <link rel="stylesheet" href="/css/style.css">
-
-    <!--&lt;!&ndash; Modernizr JS &ndash;&gt;-->
-    <!--<script src="js/modernizr-2.6.2.min.js"></script>-->
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <!--<script src="js/respond.min.js"></script>-->
     <script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-
 </head>
 <body>
 
@@ -95,6 +55,26 @@
         </tr>
 
     </table>
+    <hr>
+    <h1>登录信息</h1>
+    <table class="table">
+        <tr>
+            <td>登录ip</td>
+            <td>登录状态</td>
+            <td>登录时间</td>
+        </tr>
+        <tr th:each="iplog:${iplogs}">
+            <td th:text="${iplog.getIp()}"></td>
+            <span th:switch="${iplog.getStatus()}">
+                    <td th:case="0">失败</td>
+                    <td th:case="1">成功</td>
+                    <td th:case="*">失败</td>
+                </span>
+            <td th:text="${#dates.format(iplog.getLoginTime(),'yyyy-MM-dd HH:mm')}"}></td>
+
+        </tr>
+    </table>
+
 
 </div>
 <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">

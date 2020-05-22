@@ -75,6 +75,7 @@ public class LoginController {
         user.setPhone(userDTO.getPhone());
         user.setGmtCreate(System.currentTimeMillis());
         user.setGmtModified(System.currentTimeMillis());
+        user.setScore(0L);
         loginService.register(user);
         return ResultDTO.okOf();
     }

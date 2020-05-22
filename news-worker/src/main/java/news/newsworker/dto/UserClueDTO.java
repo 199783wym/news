@@ -1,4 +1,4 @@
-package news.newsuser.dto;
+package news.newsworker.dto;
 
 import lombok.Data;
 

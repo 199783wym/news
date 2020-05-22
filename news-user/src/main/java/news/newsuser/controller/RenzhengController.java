@@ -1,6 +1,7 @@
 package news.newsuser.controller;
 
 import news.newsuser.dto.RenzhengDTO;
+import news.newsuser.dto.ResultDTO;
 import news.newsuser.service.RenzhengService;
 import news.newsuser.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,11 +33,14 @@ public class RenzhengController {
 
     @RequestMapping("/toRenzheng")
     @ResponseBody
-    public String toRenzheng(@RequestParam(value="file",required=false) MultipartFile file,
+    public Object toRenzheng(@RequestParam(value="file",required=false) MultipartFile file,
                              @RequestParam(value="title",required=false) String title,
                              Model model){
         System.out.println(file+title);
+        //提交申请
         renzhengService.insert(file, title);
-        return "redirect:/renzheng";
+        //该状态
+        userService.updateRenzhengStatus();
+        return ResultDTO.okOf();
     }
 }

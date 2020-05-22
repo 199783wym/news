@@ -5,6 +5,7 @@ import	java.security.KeyStore.Entry.Attribute;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import news.newsworker.dto.ClueDTO;
+import news.newsworker.dto.UserClueDTO;
 import news.newsworker.mapper.ClueMapper;
 import news.newsworker.mapper.DictionaryMapper;
 import news.newsworker.mapper.UserMapper;
@@ -32,10 +33,11 @@ public class ClueService {
     @Autowired
     private UserMapper userMapper;
 
-    public PageInfo<ClueDTO> selectClue(Clue clue) {
+    public PageInfo<ClueDTO> selectClue(Clue clue,Integer page,Integer size) {
 
         ClueExample clueExample = new ClueExample();
-        PageHelper.startPage(2, 5);
+        clueExample.setOrderByClause("gmt_create desc");
+        PageHelper.startPage(page, size);
         List<Clue> list = clueMapper.selectByExample(clueExample);
         List<ClueDTO> clueDTOS = new ArrayList<>();
         PageInfo<Clue> befPageInfo = new PageInfo<Clue>(list);
@@ -98,5 +100,36 @@ public class ClueService {
                 .andIdEqualTo(clueId);
         clueMapper.updateByExampleSelective(updateClue, clueExample);
 
+    }
+
+    public UserClueDTO searchUserClue(Long id) {
+        UserClueDTO userClueDTO =new UserClueDTO();
+        ClueExample clueExample = new ClueExample();
+        clueExample.createCriteria().andCreateIdEqualTo(id);
+        userClueDTO.setTotalCount(clueMapper.countByExample(clueExample));
+        ClueExample clueExample2 = new ClueExample();
+        clueExample2.createCriteria().andCreateIdEqualTo(id).andStatusEqualTo(4L);
+        userClueDTO.setSuccessCount(clueMapper.countByExample(clueExample2));
+        return userClueDTO;
+    }
+
+    public void pass2(Long clueId) {
+        Clue updateClue =new Clue();
+        updateClue.setStatus(2L);
+        updateClue.setAudit2(1L);
+        updateClue.setAudit2No(UserContext.getLoginInfo().getId());
+        ClueExample clueExample=new ClueExample();
+        clueExample.createCriteria()
+                .andIdEqualTo(clueId);
+        clueMapper.updateByExampleSelective(updateClue, clueExample);
+    }
+
+    public void publish(Long clueId) {
+        Clue updateClue =new Clue();
+        updateClue.setStatus(3L);
+        ClueExample clueExample=new ClueExample();
+        clueExample.createCriteria()
+                .andIdEqualTo(clueId);
+        clueMapper.updateByExampleSelective(updateClue, clueExample);
     }
 }

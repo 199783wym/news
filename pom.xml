@@ -12,6 +12,7 @@
     <modules>
         <module>news-user</module>
         <module>news-worker</module>
+        <module>news-publish</module>
     </modules>
     <groupId>news</groupId>
     <artifactId>news</artifactId>

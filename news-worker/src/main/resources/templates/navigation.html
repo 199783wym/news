@@ -68,14 +68,15 @@
                     <ul class="nav navbar-nav navbar-right" th:if="${session.user!=null}" style="font-size: 25px">
                         <li><a href="/clue">线索目录</a></li>
                         <li><a href="/toAudit">待我审核</a></li>
-                        <li><a href="/renzheng">认证审核</a></li>
+                        <li><a href="/renzhengList">认证审核</a></li>
                         <li><a href="/news">新闻稿</a></li>
-                        <li><a href="#">欢迎</a></li>
-                        <li class="has-dropdown" >
-                            <a href="#" th:text="${session.user.getUsername()}"></a>
+                        <!--<li><a href="#">欢迎</a></li>-->
+                        <li class="has-dropdown">
+                            <a href="#" th:text="${'欢迎'+session.user.getUsername()}"></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/logout">退出登录</a></li>
+
                             </ul>
+                        <li><a href="/logout">退出登录</a></li>
 
 
                         </li>

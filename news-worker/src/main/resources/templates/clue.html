@@ -151,31 +151,22 @@
 
         <nav aria-label="Page navigation">
             <ul class="pagination">
-                <!--<li th:if="${cluePageInfo.isFirstPage}">-->
-                <!--<a href="/myclue?page=1" aria-label="Previous">-->
-                <!--<span aria-hidden="true">&lt;&lt;</span>-->
-                <!--</a>-->
-                <!--</li>-->
+
                 <li th:if="${cluePageInfo.hasPreviousPage}">
-                    <a th:href="@{/myclue(page=${cluePageInfo.pageNum -1})}" aria-label="Previous">
+                    <a th:href="@{/clue(page=${cluePageInfo.pageNum -1})}" aria-label="Previous">
                         <span aria-hidden="true">&lt;</span>
                     </a>
                 </li>
 
                 <li th:class="${cluePageInfo.pageNum==page}?'active':''" th:each="page:${cluePageInfo.navigatepageNums}">
-                    <a th:href="@{/myclue(page=${page})}" th:text="${page}"></a>
+                    <a th:href="@{/clue(page=${page})}" th:text="${page}"></a>
                 </li>
 
                 <li th:if="${cluePageInfo.hasNextPage}">
-                    <a th:href="@{/myclue(page=${cluePageInfo.pageNum+1})}" aria-label="Previous">
+                    <a th:href="@{/clue(page=${cluePageInfo.pageNum+1})}" aria-label="Previous">
                         <span aria-hidden="true">&gt;</span>
                     </a>
                 </li>
-                <!--<li th:if="${cluePageInfo.isLastPage}">-->
-                <!--<a th:href="@{/myclue(page=${pagination.totalPage})}" aria-label="Previous">-->
-                <!--<span aria-hidden="true">&gt;&gt;</span>-->
-                <!--</a>-->
-                <!--</li>-->
             </ul>
         </nav>
     </div>

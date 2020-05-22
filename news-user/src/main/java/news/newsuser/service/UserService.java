@@ -19,4 +19,9 @@ public class UserService {
         return userMapper.selectByPrimaryKey(UserContext.getLoginInfo().getId());
     }
 
+    public void updateRenzhengStatus() {
+        User user =UserContext.getLoginInfo();
+        user.setRenzheng(2L);
+        userMapper.updateByPrimaryKeySelective(user);
+    }
 }

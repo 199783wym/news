@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="news-publish" />
         <module name="news-user" />
         <module name="news-worker" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="news" target="1.8" />
+      <module name="news-publish" target="1.8" />
       <module name="news-user" target="1.8" />
       <module name="news-worker" target="1.8" />
     </bytecodeTargetLevel>

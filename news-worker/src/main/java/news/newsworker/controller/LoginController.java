@@ -27,6 +27,7 @@ public class LoginController {
     @Autowired
     private LoginService loginService;
 
+
     @RequestMapping("/login")
     public String login(
             @RequestParam(value = "userName",required =false)String username,
@@ -39,6 +40,7 @@ public class LoginController {
         boolean flag = loginService.isAdmin(username, DigestUtils.md5DigestAsHex(password.getBytes()));
         if(flag){
             response.addCookie(new Cookie("username",username));
+
         }
        return "redirect:/clue";
     }

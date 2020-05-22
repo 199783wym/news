@@ -1,8 +1,11 @@
 package news.newsworker.service;
 
 import news.newsworker.mapper.AdminMapper;
+import news.newsworker.mapper.IplogMapper;
 import news.newsworker.model.Admin;
 import news.newsworker.model.AdminExample;
+import news.newsworker.model.Iplog;
+import news.newsworker.util.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +21,8 @@ public class LoginService {
 
     @Autowired
     private AdminMapper adminMapper;
+    @Autowired
+    private IplogMapper iplogMapper;
 
     public boolean isAdmin(String username ,String password){
         AdminExample adminExample =new AdminExample();
@@ -33,8 +38,7 @@ public class LoginService {
             }
             return false;
         }
-
-
-
     }
+
+
 }
