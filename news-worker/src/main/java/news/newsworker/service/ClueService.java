@@ -5,10 +5,10 @@ import	java.security.KeyStore.Entry.Attribute;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import news.newsworker.dto.ClueDTO;
+import news.newsworker.dto.ClueInfoDTO;
+import news.newsworker.dto.SuperAdminDTO;
 import news.newsworker.dto.UserClueDTO;
-import news.newsworker.mapper.ClueMapper;
-import news.newsworker.mapper.DictionaryMapper;
-import news.newsworker.mapper.UserMapper;
+import news.newsworker.mapper.*;
 import news.newsworker.model.*;
 import news.newsworker.util.UserContext;
 import org.springframework.beans.BeanUtils;
@@ -32,6 +32,10 @@ public class ClueService {
     private ClueMapper clueMapper;
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private AdminMapper adminMapper;
+    @Autowired
+    private NewsMapper newsMapper;
 
     public PageInfo<ClueDTO> selectClue(Clue clue,Integer page,Integer size) {
 
@@ -131,5 +135,54 @@ public class ClueService {
         clueExample.createCriteria()
                 .andIdEqualTo(clueId);
         clueMapper.updateByExampleSelective(updateClue, clueExample);
+    }
+
+    public void updateAduit(SuperAdminDTO superAdminDTO) {
+        //先查该名字的id
+        AdminExample adminExample = new AdminExample();
+        adminExample.createCriteria().andUsernameEqualTo(superAdminDTO.getSuperAdminId());
+        List<Admin> admins = adminMapper.selectByExample(adminExample);
+        Admin admin = admins.get(0);
+        //更新至线索中
+        Clue clue = clueMapper.selectByPrimaryKey(superAdminDTO.getClueId());
+        clue.setToId(admin.getId());
+        clueMapper.updateByPrimaryKeySelective(clue);
+    }
+
+    public PageInfo<ClueDTO> selectClueAduit(Clue clue, Integer page, Integer size) {
+        ClueExample clueExample = new ClueExample();
+        clueExample.setOrderByClause("gmt_create desc");
+        clueExample.createCriteria().andToIdEqualTo(UserContext.getLoginInfo().getId());
+        PageHelper.startPage(page, size);
+        List<Clue> list = clueMapper.selectByExample(clueExample);
+        List<ClueDTO> clueDTOS = new ArrayList<>();
+        PageInfo<Clue> befPageInfo = new PageInfo<Clue>(list);
+        for(Clue clue1:list){
+            User user = userMapper.selectByPrimaryKey(clue1.getCreateId());
+            ClueDTO clueDTO =new ClueDTO();
+            BeanUtils.copyProperties(clue1, clueDTO);
+            clueDTO.setUser(user);
+            clueDTOS.add(clueDTO);
+        }
+        PageInfo<ClueDTO> pageInfo = new PageInfo<ClueDTO>();
+        BeanUtils.copyProperties(befPageInfo,pageInfo);
+        pageInfo.setList(clueDTOS);
+        return pageInfo;
+    }
+
+    public ClueInfoDTO selectClueInfo() {
+        ClueInfoDTO clueInfoDTO=new ClueInfoDTO();
+        //待审总数
+        ClueExample clueExample1 = new ClueExample();
+        clueExample1.createCriteria().andStatusBetween(0L,2L);
+        clueInfoDTO.setToAuditCount(clueMapper.countByExample(clueExample1));
+        //发布总数
+        ClueExample clueExample2 = new ClueExample();
+        clueExample2.createCriteria().andStatusEqualTo(3L);
+        clueInfoDTO.setPublicCount(clueMapper.countByExample(clueExample2));
+        //新闻稿总数
+        NewsExample newsExample= new NewsExample();
+        clueInfoDTO.setNewsCount(newsMapper.countByExample(newsExample));
+        return  clueInfoDTO;
     }
 }

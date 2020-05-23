@@ -3,11 +3,11 @@ import	java.net.Authenticator;
 import java.util.List;
 
 import com.github.pagehelper.PageInfo;
-import news.newsworker.dto.ClueDTO;
-import news.newsworker.dto.RequestDTO;
-import news.newsworker.dto.ResultDTO;
+import news.newsworker.dto.*;
+import news.newsworker.mapper.AdminMapper;
 import news.newsworker.model.Clue;
 import news.newsworker.model.Dictionary;
+import news.newsworker.service.AdminService;
 import news.newsworker.service.ClueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,6 +25,8 @@ import javax.servlet.http.HttpServletRequest;
 public class ClueController {
     @Autowired
     private ClueService clueService;
+    @Autowired
+    private AdminService adminService;
 
     @RequestMapping("/clue")
     public String clue(Model model,
@@ -33,10 +35,14 @@ public class ClueController {
         //查字典
         List<Dictionary> clueTypes= clueService.search(1L);
         model.addAttribute("ClueTypes", clueTypes);
-
+        //查所有线索
         Clue clue = new Clue();
         PageInfo<ClueDTO> cluePageInfo=clueService.selectClue(clue,page,size);
         model.addAttribute("cluePageInfo",cluePageInfo);
+        //查工作台
+        ClueInfoDTO clueInfoDTO = clueService.selectClueInfo();
+        model.addAttribute("clueInfo", clueInfoDTO);
+
         return "clue";
     }
 
@@ -45,10 +51,9 @@ public class ClueController {
                        Model model) {
         ClueDTO clue = clueService.getById(id);
         model.addAttribute("clue", clue);
-//        model.addAttribute("title", clue.getTitle());
-//        model.addAttribute("description", question.getDescription());
-//        model.addAttribute("tag", question.getTag());
-//        model.addAttribute("id", question.getId());
+
+        //查高级管理员
+        model.addAttribute("superAdmins", adminService.selectSuperAdmin());
         return "cluePage";
     }
 
@@ -83,5 +88,28 @@ public class ClueController {
         clueService.publish(requestDTO.getClueId());
         return ResultDTO.okOf();
     }
+
+    @ResponseBody
+    @RequestMapping("/toSuperAdmin")
+    public Object toSuperAdmin(@RequestBody SuperAdminDTO superAdminDTO,
+                              HttpServletRequest request){
+        clueService.updateAduit(superAdminDTO);
+        return ResultDTO.okOf();
+    }
+
+    @RequestMapping("/toAudit")
+    public String aduit(Model model,
+                        @RequestParam(name = "page", defaultValue = "1") Integer page,
+                        @RequestParam(name = "size", defaultValue = "5") Integer size){
+        //查字典
+        List<Dictionary> clueTypes= clueService.search(1L);
+        model.addAttribute("ClueTypes", clueTypes);
+
+        Clue clue = new Clue();
+        PageInfo<ClueDTO> cluePageInfo=clueService.selectClueAduit(clue,page,size);
+        model.addAttribute("cluePageInfo",cluePageInfo);
+        return "toAduit";
+    }
+
 
 }

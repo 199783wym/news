@@ -40,7 +40,6 @@
     <!--<link rel="stylesheet" href="css/owl.theme.default.min.css">-->
 
     <link rel="stylesheet" href="/css/clue.css">
-    <link rel="stylesheet" href="/css/info.css">
 
 
 
@@ -64,47 +63,17 @@
 <div  th:insert="~{navigation :: nav}"></div>
 
 <div id="page" class="container-fluid main" >
-    <div class="row col-lg-9 col-md-12 col-sm-12 col-xs-12" style="background: white">
+    <div class="row" style="background: white">
         <div id="clue-content" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <!--<form id="select_form" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >-->
-                <!--<div class="container-fluid row">-->
-                    <!--<button type="button" class="btn btn-default btn-lg">-->
-                        <!--<span class="glyphicon glyphicon-search col-lg-1" aria-hidden="true"></span> 搜索-->
-                    <!--</button>-->
+            <form id="select_form" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+            <h1>待您审核</h1>
 
-                    <!--<span class="tap_text col-xs-12 col-sm-12 col-md-3 col-lg-1">类别</span>-->
 
-                    <!--<select class="tap_select col-xs-12 col-sm-12 col-md-3 col-lg-1">-->
-                        <!--<option>全部</option>-->
-                        <!--<option  th:each="type:${ClueTypes}" th:text="${type.name}"></option>-->
-                    <!--</select>-->
-                    <!--<span class="tap_text col-xs-12 col-sm-12 col-md-3 col-lg-1">状态</span>-->
-                    <!--<select class="tap_select col-xs-12 col-sm-12 col-md-3 col-lg-1" >-->
-                        <!--<option>全部</option>-->
-                        <!--<option>未审核</option>-->
-                        <!--<option>一审通过</option>-->
-                        <!--<option>二审通过</option>-->
-                        <!--<option>已发布</option>-->
-                    <!--</select>-->
-                    <!--<span class="tap_text col-xs-12 col-sm-12 col-md-3 col-lg-1">类别</span>-->
-                    <!--<select class="tap_select col-xs-12 col-sm-12 col-md-3 col-lg-1 ">-->
-                        <!--<option>1</option>-->
-                        <!--<option>2</option>-->
-                        <!--<option>3</option>-->
-                        <!--<option>4</option>-->
-                        <!--<option>5</option>-->
-                    <!--</select>-->
-                    <!--<span class="tap_text col-xs-12 col-sm-12 col-md-3 col-lg-1">类别</span>-->
-                    <!--<select class="tap_select col-xs-12 col-sm-12 col-md-3 col-lg-1">-->
-                        <!--<option>1</option>-->
-                        <!--<option>2</option>-->
-                        <!--<option>3</option>-->
-                        <!--<option>4</option>-->
-                        <!--<option>5</option>-->
-                    <!--</select>-->
-                <!--</div>-->
-            <!--</form>-->
-            <h1>全部线索</h1>
+
+
+
+
+            </form>
             <div class="media col-xs-12 col-sm-12 col-md-12 col-lg-12"   th:each="clue:${cluePageInfo.list}">
                 <div class="media-left">
                     <a href="#">
@@ -164,32 +133,6 @@
             </ul>
         </nav>
     </div>
-    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2>工作台</h2>
-
-            <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <span class="col-lg-8 col-md-12 col-sm-12 col-xs-12"style="font-size: 30px;padding-top: 58px">待审核总数：</span>
-            <div class="roundedRectangle col-lg-4 col-md-12 col-sm-12 col-xs-12" style="background: #f28e16;padding-right:5px">
-                <p th:text="${clueInfo.getToAuditCount()}">0</p>
-            </div>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <span class="col-lg-8 col-md-12 col-sm-12 col-xs-12"style="font-size: 30px;padding-top: 58px">已发布总数：</span>
-            <div class="roundedRectangle col-lg-4 col-md-12 col-sm-12 col-xs-12" style="background: #6ff2b3;padding-right:5px">
-                <p th:text="${clueInfo.getPublicCount()}">33</p>
-            </div>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <span class="col-lg-8 col-md-12 col-sm-12 col-xs-12"style="font-size: 30px;padding-top: 58px">新闻稿总数：</span>
-            <div class="roundedRectangle col-lg-4 col-md-12 col-sm-12 col-xs-12" style="background: #70cef2;padding-right:5px">
-                <p th:text="${clueInfo.getNewsCount()}">33</p>
-            </div>
-        </div>
-    </div>
-
 
 </div>
 <!-- jQuery -->

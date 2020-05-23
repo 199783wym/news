@@ -11,10 +11,11 @@
 
 .roundedRectangle p {
     margin: 0px auto;
-    padding: 20px;
+    padding-top:20px;
     text-align: center;
-    font-size: 35px;
+    font-size: 60px;
     letter-spacing: 8px;
     font-weight:900;
     color:whitesmoke;
+
 }

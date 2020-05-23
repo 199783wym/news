@@ -23,7 +23,7 @@
 <div class="gtco-loader"></div>
 <div  th:insert="~{navigation :: nav}"></div>
 <div id="block_left"class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-    <h1 ><span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true" style="color: #000;">个人信息</span></h1>
+    <h1 >用户信息</span></h1>
     <hr>
     <table class="table table-striped">
         <tr>
@@ -74,15 +74,13 @@
 
         </tr>
     </table>
-
-
 </div>
 <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-    <h3 style="color: #000;font-size: 40px">线索成就</h3>
+    <h3 style="color: #000;font-size: 40px;padding-bottom: 30px">线索成就</h3>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
             <div>
-                <span>线索总数</span>
+                <span style="color: #000;font-size: 20px">线索总数</span>
             </div>
             <div class="roundedRectangle" style="background: #1a6840;">
                 <p th:text="${userClue.totalCount}">1</p>
@@ -90,7 +88,7 @@
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
             <div>
-                <span >通过线索</span>
+                <span style="color: #000;font-size: 20px" >通过线索</span>
             </div>
             <div class="roundedRectangle" style="background: #fbda41;">
                 <p th:text="${userClue.successCount}">0</p>
@@ -98,7 +96,7 @@
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
             <div>
-                <span >剩余积分</span>
+                <span style="color: #000;font-size: 20px">剩余积分</span>
             </div>
             <div class="roundedRectangle" style="background: #f28e16;">
                 <p th:text="${user.getScore()}">0</p>

@@ -82,3 +82,26 @@ function publish(e){
     })
 }
 
+function toSuper(e){
+    var clueId = e.getAttribute("data-id");
+    var superAdminId=$("#superAdmin").val();
+    $.ajax({
+        type:"POST",
+        url:"/toSuperAdmin",
+        contentType:'application/json',
+        data:JSON.stringify({
+            "clueId":clueId,
+            "superAdminId":superAdminId
+        }),
+    success:function(response) {
+        if (response.code ==200){
+            alert("指定成功");
+            window.location.reload();
+        } else {
+            alert(response.message);
+        }
+    },
+    dataType: "json"
+    })
+}
+
